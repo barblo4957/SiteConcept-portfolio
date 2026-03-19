@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "headline": "Zamień ruch w lojalnych klientów",
+    "title": "Twoja marka zasługuje na oprawę premium.",
+    "subtitle": "Pierwsze wrażenie decyduje o zaufaniu. Daj swojej marce stronę, która od pierwszej sekundy pracuje na wynik.",
+    "cta": {
+      "primary": "Zacznijmy projekt",
+      "secondary": "Zobacz nasze realizacje"
+    }
+  },
+  "nav": {
+    "services": "Usługi",
+    "strategy": "Strategia",
+    "portfolio": "Portfolio",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "language": "EN"
+  },
+  "portfolio": {
+    "eyebrow": "PORTFOLIO",
+    "title": "Integra Automatyka",
+    "tag": "Service Platform / Cal.com Integration",
+    "description": "Nowoczesna platforma dla branży automatyki i pomiarów. Wdrożenie inteligentnego systemu rezerwacji terminów (Cal.com), który eliminuje ręczne planowanie pomiarów i optymalizuje czas pracy specjalisty."
+  },
+  "strategy": {
+    "eyebrow": "NASZA METODA",
+    "headline": "Strategia oparta na danych, nie na domysłach.",
+    "method": {
+      "analysis": {
+        "title": "Analiza",
+        "description": "Rozbieramy Twoją obecną stronę na czynniki pierwsze: ruch, zachowanie użytkowników i punkty utraty konwersji."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Projektujemy doświadczenie, które buduje zaufanie od pierwszego kliknięcia i prowadzi użytkownika do działania."
+      },
+      "results": {
+        "title": "Wyniki",
+        "description": "Wdrażamy i mierzymy efekty, aby każda decyzja przekładała się na realny wzrost jakości leadów i sprzedaży."
+      }
+    },
+    "subtitle": "Jak pomagamy",
+    "title": "Zamieniamy problemy w przewagi.",
+    "cards": {
+      "image": {
+        "title": "Zamieniamy 'wyglądanie tanio' w status lidera.",
+        "description": "Klienci uciekają do konkurencji przez pierwsze wrażenie. Budujemy wizerunek premium, który sprawia, że przestają pytać o cenę."
+      },
+      "speed": {
+        "title": "Zamieniamy irytujące czekanie w zachwyt.",
+        "description": "Twoja strona ma być jak Tesla — szybka i bezbłędna. Błyskawiczne ładowanie zatrzymuje klienta, zanim zdąży pomyśleć o wyjściu."
+      },
+      "conversion": {
+        "title": "Zamieniamy puste kliknięcia w zyski.",
+        "description": "Zamiast nudnej wizytówki, dostajesz cyfrową maszynę. Każdy element strony prowadzi klienta za rękę prosto do decyzji o zakupie."
+      }
+    }
+  },
+  "bento": {
+    "eyebrow": "NASZE REALIZACJE",
+    "headline": "Przewagi, które przekładają się na wynik.",
+    "main_title": "Zarabiaj, gdy Twój zespół odpoczywa",
+    "main_description": "Budujemy autonomiczne systemy, które samodzielnie domykają sprzedaż i obsługują procesy 24/7. Uwalniamy Twój czas, delegując powtarzalne zadania do sztucznej inteligencji.",
+    "data_title": "Twoje sekrety zostają w firmie",
+    "data_description": "Budujemy prywatne rozwiązania AI. Twoja unikalna wiedza i dane klientów są bezpieczne — nigdy nie opuszczają Twojej infrastruktury i nie karmią publicznych modeli.",
+    "interface_title": "Koniec z porzuconymi koszykami",
+    "interface_description": "Eliminujemy bariery decyzyjne. Tworzymy interfejsy tak szybkie i intuicyjne, że klienci przechodzą od potrzeby do zakupu w kilka sekund, bez cienia frustracji.",
+    "growth_title": "Skalowanie bez nowych etatów",
+    "growth_description": "Twoje AI uczy się z każdą interakcją. Automatycznie optymalizuje lejki sprzedażowe i obniża koszty operacyjne, pozwalając Ci rosnąć bez powiększania zespołu.",
+    "ecosystem_title": "Marka, o której będzie głośno",
+    "ecosystem_description": "Wykorzystaj głos i wizję, by stworzyć relację, której konkurencja nie jest w stanie skopiować. Twoja obecność w sieci staje się inteligentnym partnerem dla klienta."
+  },
+  "pricing": {
+    "eyebrow": "CENNIK",
+    "headline": "Skala oszczędności i autonomii — dopasowana do Ciebie.",
+    "starter": {
+      "name": "Landing Page Ultra",
+      "tagline": "2000 zł za One-page",
+      "description": "Jedna strona / do 3 sekcji dodatkowych, formularz kontaktowy i wynik wydajności 95+ — gotowe w 7–14 dni.",
+      "feature1": "Jedna strona / do 3 sekcji dodatkowych",
+      "feature2": "Formularz kontaktowy dla leadów",
+      "feature3": "Wynik wydajności 95+",
+      "feature4": "Czas realizacji: 7–14 dni"
+    },
+    "business": {
+      "name": "Business Site",
+      "tagline": "3500 zł za serwis do 10 stron",
+      "badge": "Najpopularniejszy",
+      "description": "Do 10 podstron, CMS do zarządzania treścią, SEO on-page i analityka — realizacja w 3–6 tygodni.",
+      "feature1": "Do 10 podstron",
+      "feature2": "Headless CMS do publikacji treści",
+      "feature3": "SEO on-page (sitemap, OG, structured data)",
+      "feature4": "Analityka, która pokazuje wyniki"
+    },
+    "enterprise": {
+      "name": "Enterprise / AI Solutions",
+      "tagline": "Wycena indywidualna",
+      "description": "Dedykowany ekosystem AI: nieograniczona liczba podstron, integracje API i wsparcie — realizacja 6–12 tygodni.",
+      "feature1": "Nieograniczona liczba podstron",
+      "feature2": "Integracje API (CRM, newsletter, płatności)",
+      "feature3": "Dedykowane wsparcie przez 3 miesiące",
+      "feature4": "Czas realizacji: 6–12 tygodni"
+    }
+  },
+  "contact": {
+    "title": "Gotowy na zmianę?",
+    "description": "Opowiedz nam o swoim projekcie. Odpowiemy w ciągu 24 godzin.",
+    "fields": {
+      "name": {
+        "label": "Imię",
+        "placeholder": "Imię"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Email"
+      },
+      "message": {
+        "label": "Wiadomość",
+        "placeholder": "Wiadomość"
+      }
+    },
+    "submit": {
+      "label": "Wyślij wiadomość",
+      "sending": "Wysyłanie..."
+    },
+    "success": "Dzięki! Wiadomość dotarła.",
+    "errors": {
+      "invalidEmail": "Podaj poprawny adres e-mail.",
+      "emptyMessage": "Wiadomość nie może być pusta.",
+      "generic": "Coś poszło nie tak. Spróbuj ponownie."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 SiteConcept. All rights reserved.",
+    "links": {
+      "services": "Usługi",
+      "strategy": "Strategia",
+      "portfolio": "Portfolio",
+      "contact": "Kontakt",
+      "privacyPolicy": "Polityka prywatności"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "x": "X"
+    }
+  },
+  "cookies": {
+    "text": "Używamy plików cookie i podobnych technologii, aby świadczyć usługi i ulepszać serwis. Kliknij „Akceptuję”, aby potwierdzić zgodę.",
+    "accept": "Akceptuję"
+  },
+  "privacy": {
+    "title": "Polityka prywatności",
+    "intro": "Poniżej wyjaśniamy, w jaki sposób przetwarzamy dane osobowe użytkowników serwisu SiteConcept, w tym dane z formularza kontaktowego oraz informacje zapisywane w ramach plików cookie.",
+    "dataProtection": {
+      "heading": "Ochrona danych",
+      "text": "Dane osobowe przetwarzamy w celu realizacji zapytań i obsługi użytkowników. Administratorem danych jest SiteConcept. Stosujemy środki techniczne i organizacyjne, aby chronić dane przed nieuprawnionym dostępem, utratą lub modyfikacją."
+    },
+    "cookies": {
+      "heading": "Ciasteczka",
+      "text": "Serwis może wykorzystywać pliki cookie oraz podobne technologie (np. lokalne przechowywanie ustawień) do działania strony i zapamiętywania Twojej zgody. Dane te nie służą do identyfikacji użytkownika w sposób, który narusza prywatność."
+    },
+    "contactForm": {
+      "heading": "Formularz kontaktowy",
+      "text": "Wysłanie formularza kontaktowego oznacza, że przekazujesz nam adres e-mail i treść wiadomości. Dane te przetwarzamy w celu odpowiedzi na Twoje zapytanie. W każdej chwili możesz skontaktować się z nami w sprawie swoich danych."
+    },
+    "lastUpdated": "Ostatnia aktualizacja: 2026-03-19"
+  }
+}

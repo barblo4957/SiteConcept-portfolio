@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "title": "Twoja marka zasługuje na oprawę premium.",
+    "subtitle": "Budujemy strony, które zamieniają przypadkowych gości w lojalnych klientów. Pierwsze wrażenie masz tylko raz — zrób z niego atut.",
+    "cta": {
+      "primary": "Zacznijmy projekt",
+      "secondary": "Zobacz nasze realizacje"
+    }
+  },
+  "nav": {
+    "services": "Usługi",
+    "portfolio": "Portfolio",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "language": "EN"
+  },
+  "strategy": {
+    "subtitle": "Jak pomagamy",
+    "title": "Zamieniamy problemy w przewagi.",
+    "cards": {
+      "image": {
+        "title": "Zamieniamy 'wyglądanie tanio' w status lidera.",
+        "description": "Klienci uciekają do konkurencji przez pierwsze wrażenie. Budujemy wizerunek premium, który sprawia, że przestają pytać o cenę."
+      },
+      "speed": {
+        "title": "Zamieniamy irytujące czekanie w zachwyt.",
+        "description": "Twoja strona ma być jak Tesla — szybka i bezbłędna. Błyskawiczne ładowanie zatrzymuje klienta, zanim zdąży pomyśleć o wyjściu."
+      },
+      "conversion": {
+        "title": "Zamieniamy puste kliknięcia w zyski.",
+        "description": "Zamiast nudnej wizytówki, dostajesz cyfrową maszynę. Każdy element strony prowadzi klienta za rękę prosto do decyzji o zakupie."
+      }
+    }
+  }
+}

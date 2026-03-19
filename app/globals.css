@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Mesh gradient wave — bardzo powolna fala w tle Hero */
+@keyframes mesh-wave {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1) translate(0%, 0%) rotate(0deg);
+  }
+  33% {
+    opacity: 0.7;
+    transform: scale(1.15) translate(3%, -2%) rotate(2deg);
+  }
+  66% {
+    opacity: 0.6;
+    transform: scale(1.08) translate(-2%, 2%) rotate(-1deg);
+  }
+}
+
+/* Delikatna pulsująca poświatę przycisku Kontakt */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(163, 230, 53, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(163, 230, 53, 0.4);
+  }
+}

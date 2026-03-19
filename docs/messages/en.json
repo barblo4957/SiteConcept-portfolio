@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "title": "Your brand deserves a premium experience.",
+    "subtitle": "We build websites that turn casual visitors into loyal customers. You only get one first impression — make it count.",
+    "cta": {
+      "primary": "Start a project",
+      "secondary": "View our work"
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "language": "PL"
+  },
+  "strategy": {
+    "subtitle": "How we help",
+    "title": "Turning problems into advantages.",
+    "cards": {
+      "image": {
+        "title": "From looking cheap to premium status.",
+        "description": "Customers leave due to poor first impressions. We build a premium presence that makes them stop asking about the price."
+      },
+      "speed": {
+        "title": "From frustrating waits to instant delight.",
+        "description": "Your site should be like a Tesla — fast and flawless. Lightning-fast loading keeps customers engaged before they can bounce."
+      },
+      "conversion": {
+        "title": "From empty clicks to real profits.",
+        "description": "Instead of a boring brochure, you get a digital machine. Every element guides the customer straight to the purchasing decision."
+      }
+    }
+  }
+}

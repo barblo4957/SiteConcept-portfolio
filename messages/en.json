@@ -1,0 +1,168 @@
+{
+  "hero": {
+    "headline": "Turn traffic into loyal customers",
+    "title": "Your brand deserves a premium experience.",
+    "subtitle": "First impression builds trust. Give your brand a site that works for the result from the very first second.",
+    "cta": {
+      "primary": "Start a project",
+      "secondary": "View our work"
+    }
+  },
+  "nav": {
+    "services": "Services",
+    "strategy": "Strategy",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "language": "PL"
+  },
+  "portfolio": {
+    "eyebrow": "PORTFOLIO",
+    "title": "Integra Automatyka",
+    "tag": "Service Platform / Cal.com Integration",
+    "description": "A modern platform for the automation and measurement industry. Implementation of an intelligent booking system (Cal.com) that eliminates manual scheduling and optimizes professional workflow."
+  },
+  "strategy": {
+    "eyebrow": "OUR METHOD",
+    "headline": "Strategy driven by data, not guesswork.",
+    "method": {
+      "analysis": {
+        "title": "Analysis",
+        "description": "We break down your current site: traffic, user behaviour and conversion drop-off points."
+      },
+      "design": {
+        "title": "Design",
+        "description": "We design an experience that builds trust from the first click and guides users to action."
+      },
+      "results": {
+        "title": "Results",
+        "description": "We implement and measure outcomes so every decision translates into better lead quality and sales."
+      }
+    },
+    "subtitle": "How we help",
+    "title": "Turning problems into advantages.",
+    "cards": {
+      "image": {
+        "title": "From looking cheap to premium status.",
+        "description": "Customers leave due to poor first impressions. We build a premium presence that makes them stop asking about the price."
+      },
+      "speed": {
+        "title": "From frustrating waits to instant delight.",
+        "description": "Your site should be like a Tesla — fast and flawless. Lightning-fast loading keeps customers engaged before they can bounce."
+      },
+      "conversion": {
+        "title": "From empty clicks to real profits.",
+        "description": "Instead of a boring brochure, you get a digital machine. Every element guides the customer straight to the purchasing decision."
+      }
+    }
+  },
+  "bento": {
+    "eyebrow": "OUR WORK",
+    "headline": "Advantages that translate into outcomes.",
+    "main_title": "Earn while your team rests",
+    "main_description": "We build autonomous systems that close sales and handle processes 24/7. We free your team by delegating repetitive work to AI.",
+    "data_title": "Your secrets stay in-house",
+    "data_description": "We build private AI solutions. Your know-how and customer data stay secure — they never leave your infrastructure and never train public models.",
+    "interface_title": "No more abandoned carts",
+    "interface_description": "We remove decision friction. We design interfaces so fast and intuitive that customers move from intent to purchase in seconds, without frustration.",
+    "growth_title": "Scale without new headcount",
+    "growth_description": "Your AI improves with every interaction. It optimizes funnels and lowers operational costs automatically, so you can grow without expanding the team.",
+    "ecosystem_title": "A brand people talk about",
+    "ecosystem_description": "Use voice and vision to build a relationship your competitors cannot replicate. Your web presence becomes an intelligent partner for every customer."
+  },
+  "pricing": {
+    "eyebrow": "PRICING",
+    "headline": "Scale of savings and autonomy — tailored to you.",
+    "starter": {
+      "name": "Landing Page Ultra",
+      "tagline": "2000 PLN for One-page",
+      "description": "One page / up to 3 extra sections, a contact form, and a 95+ performance score — delivered in 7–14 days.",
+      "feature1": "One page / up to 3 extra sections",
+      "feature2": "Contact form for qualified leads",
+      "feature3": "95+ performance score",
+      "feature4": "Delivery time: 7–14 days"
+    },
+    "business": {
+      "name": "Business Site",
+      "tagline": "3500 PLN for a 10-page website",
+      "badge": "Most popular",
+      "description": "Up to 10 pages, a CMS to manage content, on-page SEO, and analytics — delivered in 3–6 weeks.",
+      "feature1": "Up to 10 pages",
+      "feature2": "Headless CMS for content publishing",
+      "feature3": "On-page SEO (sitemap, OG, structured data)",
+      "feature4": "Analytics that shows results"
+    },
+    "enterprise": {
+      "name": "Enterprise / AI Solutions",
+      "tagline": "Custom quote",
+      "description": "A dedicated AI ecosystem: unlimited pages, API integrations, and support — delivered in 6–12 weeks.",
+      "feature1": "Unlimited pages",
+      "feature2": "API integrations (CRM, newsletter, payments)",
+      "feature3": "Dedicated support for 3 months",
+      "feature4": "Delivery time: 6–12 weeks"
+    }
+  },
+  "contact": {
+    "title": "Ready for a change?",
+    "description": "Tell us about your project. We’ll get back within 24 hours.",
+    "fields": {
+      "name": {
+        "label": "Name",
+        "placeholder": "Name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Email"
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Message"
+      }
+    },
+    "submit": {
+      "label": "Send message",
+      "sending": "Sending..."
+    },
+    "success": "Thanks! Your message has been delivered.",
+    "errors": {
+      "invalidEmail": "Please enter a valid email address.",
+      "emptyMessage": "Message cannot be empty.",
+      "generic": "Something went wrong. Please try again."
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 SiteConcept. All rights reserved.",
+    "links": {
+      "services": "Services",
+      "strategy": "Strategy",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "privacyPolicy": "Privacy policy"
+    },
+    "social": {
+      "linkedin": "LinkedIn",
+      "x": "X"
+    }
+  },
+  "cookies": {
+    "text": "We use cookies and similar technologies to provide the services and improve the website. Click “Accept” to confirm your consent.",
+    "accept": "Accept"
+  },
+  "privacy": {
+    "title": "Privacy policy",
+    "intro": "Below we explain how we process personal data of visitors of the SiteConcept website, including the data submitted via the contact form and information stored through cookies.",
+    "dataProtection": {
+      "heading": "Data protection",
+      "text": "We process personal data to respond to inquiries and support users. The data controller is SiteConcept. We use appropriate technical and organizational measures to protect data against unauthorized access, loss, or alteration."
+    },
+    "cookies": {
+      "heading": "Cookies",
+      "text": "The website may use cookies and similar technologies (for example local storage of preferences) to run the site and remember your consent. This data is not used to identify users in a way that violates privacy."
+    },
+    "contactForm": {
+      "heading": "Contact form",
+      "text": "Submitting the contact form means you provide your email address and message content. We process this data to respond to your request. You can contact us at any time regarding your data."
+    },
+    "lastUpdated": "Last updated: 2026-03-19"
+  }
+}
