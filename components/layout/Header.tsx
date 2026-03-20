@@ -222,6 +222,38 @@ export default function Header() {
           >
             {t("contact")}
           </motion.a>
+
+          <motion.div
+            custom={navLinks.length + 1}
+            initial="hidden"
+            animate={menuOpen ? "visible" : "hidden"}
+            variants={menuStagger}
+            className="flex items-center text-xs font-medium uppercase tracking-widest text-zinc-400"
+          >
+            <button
+              type="button"
+              onClick={() => {
+                setLocale("pl");
+                setMenuOpen(false);
+              }}
+              className={`transition-colors ${locale === "pl" ? "text-white" : "hover:text-white"}`}
+              aria-label="Przełącz na język polski"
+            >
+              PL
+            </button>
+            <span className="mx-2 text-zinc-600">|</span>
+            <button
+              type="button"
+              onClick={() => {
+                setLocale("en");
+                setMenuOpen(false);
+              }}
+              className={`transition-colors ${locale === "en" ? "text-white" : "hover:text-white"}`}
+              aria-label="Switch to English"
+            >
+              EN
+            </button>
+          </motion.div>
         </div>
       </motion.div>
     </>
