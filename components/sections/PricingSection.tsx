@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 const FEATURES_COUNT = 4;
 const sectionReveal = {
@@ -39,6 +40,7 @@ function usePricingTier(
 
 export default function PricingSection() {
   const t = useTranslations("pricing");
+  const isMobile = useIsMobile();
   const starter = usePricingTier(t, "starter");
   const business = usePricingTier(t, "business");
   const enterprise = usePricingTier(t, "enterprise");
@@ -50,8 +52,8 @@ export default function PricingSection() {
 
   return (
     <motion.section
-      initial="visible"
-      animate="visible"
+      initial={isMobile ? false : "visible"}
+      animate={isMobile ? undefined : "visible"}
       variants={sectionReveal}
       id="cennik"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"

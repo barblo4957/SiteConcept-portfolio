@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { useLocaleSwitcher } from "../providers/IntlProvider";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 function NavLink({ label, href }: { label: string; href: string }) {
   return (
@@ -76,6 +77,7 @@ function MagneticButton({ label }: { label: string }) {
 export default function Header() {
   const t = useTranslations("nav");
   const { locale, setLocale } = useLocaleSwitcher();
+  const isMobile = useIsMobile();
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = [
@@ -163,21 +165,31 @@ export default function Header() {
                 aria-label={menuOpen ? "Zamknij menu" : "Otwórz menu"}
                 aria-expanded={menuOpen}
               >
-                <motion.span
-                  animate={menuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
-                  transition={{ duration: 0.25 }}
-                  className="h-0.5 w-5 origin-center bg-current"
-                />
-                <motion.span
-                  animate={menuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
-                  transition={{ duration: 0.2 }}
-                  className="h-0.5 w-5 bg-current"
-                />
-                <motion.span
-                  animate={menuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
-                  transition={{ duration: 0.25 }}
-                  className="h-0.5 w-5 origin-center bg-current"
-                />
+                {isMobile ? (
+                  <>
+                    <span className={`h-0.5 w-5 origin-center bg-current ${menuOpen ? "translate-y-[6px] rotate-45" : ""}`} />
+                    <span className={`h-0.5 w-5 bg-current ${menuOpen ? "opacity-0 scale-x-0" : "opacity-100 scale-x-100"}`} />
+                    <span className={`h-0.5 w-5 origin-center bg-current ${menuOpen ? "-translate-y-[6px] -rotate-45" : ""}`} />
+                  </>
+                ) : (
+                  <>
+                    <motion.span
+                      animate={menuOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+                      transition={{ duration: 0.25 }}
+                      className="h-0.5 w-5 origin-center bg-current"
+                    />
+                    <motion.span
+                      animate={menuOpen ? { opacity: 0, scaleX: 0 } : { opacity: 1, scaleX: 1 }}
+                      transition={{ duration: 0.2 }}
+                      className="h-0.5 w-5 bg-current"
+                    />
+                    <motion.span
+                      animate={menuOpen ? { rotate: -45, y: -6 } : { rotate: 0, y: 0 }}
+                      transition={{ duration: 0.25 }}
+                      className="h-0.5 w-5 origin-center bg-current"
+                    />
+                  </>
+                )}
               </button>
             </div>
           </nav>
@@ -185,11 +197,8 @@ export default function Header() {
       </header>
 
       {/* Pełnoekranowe menu mobilne */}
-      <motion.div
-        initial={false}
-        animate={menuOpen ? { opacity: 1, pointerEvents: "auto" } : { opacity: 0, pointerEvents: "none" }}
-        transition={{ duration: 0.25 }}
-        className="fixed inset-0 z-40 md:hidden"
+      <div
+        className={`fixed inset-0 z-40 md:hidden ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} ${isMobile ? "" : "transition-opacity duration-200"}`}
       >
         <div
           className="absolute inset-0 backdrop-blur-xl bg-black/60"
@@ -198,38 +207,86 @@ export default function Header() {
         />
         <div className="relative flex min-h-full flex-col items-center justify-center gap-8 px-6">
           {navLinks.map((link, i) => (
+            isMobile ? (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="text-lg font-medium uppercase tracking-widest text-zinc-300 hover:text-white transition-colors"
+              >
+                {link.label}
+              </a>
+            ) : (
+              <motion.a
+                key={link.href}
+                href={link.href}
+                custom={i}
+                initial="hidden"
+                animate={menuOpen ? "visible" : "hidden"}
+                variants={menuStagger}
+                onClick={() => setMenuOpen(false)}
+                className="text-lg font-medium uppercase tracking-widest text-zinc-300 hover:text-white transition-colors"
+              >
+                {link.label}
+              </motion.a>
+            )
+          ))}
+          {isMobile ? (
+            <a
+              href="#kontakt"
+              onClick={() => setMenuOpen(false)}
+              className="rounded-lg border border-lime-400/50 px-5 py-2.5 text-sm font-medium text-white"
+            >
+              {t("contact")}
+            </a>
+          ) : (
             <motion.a
-              key={link.href}
-              href={link.href}
-              custom={i}
+              href="#kontakt"
+              custom={navLinks.length}
               initial="hidden"
               animate={menuOpen ? "visible" : "hidden"}
               variants={menuStagger}
               onClick={() => setMenuOpen(false)}
-              className="text-lg font-medium uppercase tracking-widest text-zinc-300 hover:text-white transition-colors"
+              className="rounded-lg border border-lime-400/50 px-5 py-2.5 text-sm font-medium text-white"
             >
-              {link.label}
+              {t("contact")}
             </motion.a>
-          ))}
-          <motion.a
-            href="#kontakt"
-            custom={navLinks.length}
-            initial="hidden"
-            animate={menuOpen ? "visible" : "hidden"}
-            variants={menuStagger}
-            onClick={() => setMenuOpen(false)}
-            className="rounded-lg border border-lime-400/50 px-5 py-2.5 text-sm font-medium text-white"
-          >
-            {t("contact")}
-          </motion.a>
+          )}
 
-          <motion.div
-            custom={navLinks.length + 1}
-            initial="hidden"
-            animate={menuOpen ? "visible" : "hidden"}
-            variants={menuStagger}
-            className="flex items-center text-xs font-medium uppercase tracking-widest text-zinc-400"
-          >
+          {isMobile ? (
+            <div className="flex items-center text-xs font-medium uppercase tracking-widest text-zinc-400">
+              <button
+                type="button"
+                onClick={() => {
+                  setLocale("pl");
+                  setMenuOpen(false);
+                }}
+                className={`transition-colors ${locale === "pl" ? "text-white" : "hover:text-white"}`}
+                aria-label="Przełącz na język polski"
+              >
+                PL
+              </button>
+              <span className="mx-2 text-zinc-600">|</span>
+              <button
+                type="button"
+                onClick={() => {
+                  setLocale("en");
+                  setMenuOpen(false);
+                }}
+                className={`transition-colors ${locale === "en" ? "text-white" : "hover:text-white"}`}
+                aria-label="Switch to English"
+              >
+                EN
+              </button>
+            </div>
+          ) : (
+            <motion.div
+              custom={navLinks.length + 1}
+              initial="hidden"
+              animate={menuOpen ? "visible" : "hidden"}
+              variants={menuStagger}
+              className="flex items-center text-xs font-medium uppercase tracking-widest text-zinc-400"
+            >
             <button
               type="button"
               onClick={() => {
@@ -253,9 +310,10 @@ export default function Header() {
             >
               EN
             </button>
-          </motion.div>
+            </motion.div>
+          )}
         </div>
-      </motion.div>
+      </div>
     </>
   );
 }

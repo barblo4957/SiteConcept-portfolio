@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import ChelVisual from "./portfolio/ChelVisual";
 import PianapurVisual from "./portfolio/PianapurVisual";
 import TenisligaVisual from "./portfolio/TenisligaVisual";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 const sectionReveal = {
   hidden: { opacity: 1, y: 0 },
@@ -34,11 +35,12 @@ function ProjectTag({ text }: { text: string }) {
 
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
+  const isMobile = useIsMobile();
 
   return (
     <motion.section
-      initial="visible"
-      animate="visible"
+      initial={isMobile ? false : "visible"}
+      animate={isMobile ? undefined : "visible"}
       variants={sectionReveal}
       id="portfolio"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"
@@ -46,20 +48,20 @@ export default function PortfolioSection() {
       <div className="pointer-events-none absolute inset-0">
         <motion.div
           aria-hidden
-          animate={{ x: [0, 36, -20, 0], y: [0, -22, 18, 0], scale: [1, 1.06, 0.98, 1] }}
-          transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }}
+          animate={isMobile ? undefined : { x: [0, 36, -20, 0], y: [0, -22, 18, 0], scale: [1, 1.06, 0.98, 1] }}
+          transition={isMobile ? undefined : { duration: 30, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -left-28 -top-28 h-[36rem] w-[36rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.22)_0%,rgba(59,130,246,0.12)_35%,rgba(15,23,42,0)_70%)] blur-3xl"
         />
         <motion.div
           aria-hidden
-          animate={{ x: [0, -26, 22, 0], y: [0, 16, -18, 0], scale: [1, 0.95, 1.04, 1] }}
-          transition={{ duration: 34, repeat: Infinity, ease: "easeInOut" }}
+          animate={isMobile ? undefined : { x: [0, -26, 22, 0], y: [0, 16, -18, 0], scale: [1, 0.95, 1.04, 1] }}
+          transition={isMobile ? undefined : { duration: 34, repeat: Infinity, ease: "easeInOut" }}
           className="absolute right-[-10rem] top-1/3 h-[40rem] w-[40rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(147,51,234,0.22)_0%,rgba(79,70,229,0.12)_38%,rgba(15,23,42,0)_72%)] blur-3xl"
         />
         <motion.div
           aria-hidden
-          animate={{ x: [0, 18, -16, 0], y: [0, -10, 14, 0], opacity: [0.16, 0.22, 0.15, 0.16] }}
-          transition={{ duration: 26, repeat: Infinity, ease: "easeInOut" }}
+          animate={isMobile ? undefined : { x: [0, 18, -16, 0], y: [0, -10, 14, 0], opacity: [0.16, 0.22, 0.15, 0.16] }}
+          transition={isMobile ? undefined : { duration: 26, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -bottom-24 -right-20 h-[26rem] w-[26rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(163,230,53,0.18)_0%,rgba(163,230,53,0.08)_35%,rgba(15,23,42,0)_68%)] blur-3xl"
         />
         <div className="absolute inset-0 bg-black/45" />

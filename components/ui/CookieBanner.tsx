@@ -3,11 +3,13 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 const STORAGE_KEY = "siteconcept_cookie_accepted_v1";
 
 export default function CookieBanner() {
   const t = useTranslations("cookies");
+  const isMobile = useIsMobile();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -30,10 +32,10 @@ export default function CookieBanner() {
 
   return (
     <motion.div
-      initial={{ y: 28, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: 28, opacity: 0 }}
-      transition={{ duration: 0.35, ease: "easeOut" }}
+      initial={isMobile ? false : { y: 28, opacity: 0 }}
+      animate={isMobile ? undefined : { y: 0, opacity: 1 }}
+      exit={isMobile ? undefined : { y: 28, opacity: 0 }}
+      transition={isMobile ? undefined : { duration: 0.35, ease: "easeOut" }}
       className="fixed left-4 bottom-4 z-[60] w-[calc(100%-2rem)] sm:w-[360px] rounded-2xl border border-white/10 bg-black/40 backdrop-blur-md p-4 shadow-lg shadow-black/20"
       role="dialog"
       aria-live="polite"

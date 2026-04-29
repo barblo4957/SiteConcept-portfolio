@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 const container = {
   hidden: {},
@@ -25,6 +26,7 @@ const wordReveal = {
 
 export default function HeroSection() {
   const t = useTranslations("hero");
+  const isMobile = useIsMobile();
   const headline = t("headline").split(" ");
 
   return (
@@ -34,30 +36,43 @@ export default function HeroSection() {
     >
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <motion.h1
-          variants={container}
-          initial="hidden"
-          animate="visible"
-          className="max-w-4xl text-white text-4xl md:text-6xl font-semibold tracking-tight font-sans"
-        >
-          {headline.map((word, i) => (
-            <motion.span
-              key={i}
-              variants={wordReveal}
-              className="inline-block mr-[0.25em]"
+        {isMobile ? (
+          <>
+            <h1 className="max-w-4xl text-white text-4xl md:text-6xl font-semibold tracking-tight font-sans opacity-100">
+              {t("headline")}
+            </h1>
+            <p className="mt-6 max-w-2xl text-zinc-300 text-lg font-sans opacity-100">
+              {t("subtitle")}
+            </p>
+          </>
+        ) : (
+          <>
+            <motion.h1
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              className="max-w-4xl text-white text-4xl md:text-6xl font-semibold tracking-tight font-sans"
             >
-              {word}
-            </motion.span>
-          ))}
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
-          className="mt-6 max-w-2xl text-zinc-300 text-lg font-sans"
-        >
-          {t("subtitle")}
-        </motion.p>
+              {headline.map((word, i) => (
+                <motion.span
+                  key={i}
+                  variants={wordReveal}
+                  className="inline-block mr-[0.25em]"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+              className="mt-6 max-w-2xl text-zinc-300 text-lg font-sans"
+            >
+              {t("subtitle")}
+            </motion.p>
+          </>
+        )}
       </div>
     </section>
   );

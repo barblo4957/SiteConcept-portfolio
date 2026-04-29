@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Search, Layout, BarChart3 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 const sectionReveal = {
   hidden: { opacity: 1, y: 0 },
@@ -24,6 +25,7 @@ const itemReveal = {
 
 export default function StrategySection() {
   const t = useTranslations("strategy");
+  const isMobile = useIsMobile();
   const items = [
     {
       id: "analysis",
@@ -47,8 +49,8 @@ export default function StrategySection() {
 
   return (
     <motion.section
-      initial="visible"
-      animate="visible"
+      initial={isMobile ? false : "visible"}
+      animate={isMobile ? undefined : "visible"}
       variants={sectionReveal}
       id="strategia"
       className="w-full py-24 md:py-32 bg-zinc-950 scroll-mt-24"

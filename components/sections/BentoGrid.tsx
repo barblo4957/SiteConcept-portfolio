@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Rocket, Shield, Zap, Target, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 const sectionReveal = {
   hidden: { opacity: 1, y: 0 },
@@ -30,12 +31,12 @@ const BENTO_KEYS = [
   { key: "ecosystem", icon: Sparkles, className: "md:col-span-3" },
 ] as const;
 
-function AutonomyTradeVisualization() {
+function AutonomyTradeVisualization({ isMobile }: { isMobile: boolean }) {
   return (
     <motion.div
       initial={{ opacity: 1, y: 0 }}
-      animate={{ opacity: 0.6, y: 0 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
+      animate={isMobile ? undefined : { opacity: 0.6, y: 0 }}
+      transition={isMobile ? undefined : { duration: 0.25, ease: "easeOut" }}
       className="mt-6 rounded-[10px] border border-[#1a1a1a] bg-[#0d0d0d] p-4 shadow-lg shadow-black/20"
     >
       <div className="flex flex-wrap items-center gap-2 text-[11px] sm:text-xs">
@@ -83,6 +84,7 @@ function getBentoItem(
 
 export default function BentoGrid() {
   const t = useTranslations("bento");
+  const isMobile = useIsMobile();
   const items = BENTO_KEYS.map((def) => getBentoItem(t, def));
   const validItems = items.filter(
     (item) => typeof item.title === "string" && typeof item.description === "string" && item.title.length > 0 && item.description.length > 0
@@ -90,8 +92,8 @@ export default function BentoGrid() {
 
   return (
     <motion.section
-      initial="visible"
-      animate="visible"
+      initial={isMobile ? false : "visible"}
+      animate={isMobile ? undefined : "visible"}
       variants={sectionReveal}
       id="zalety"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"
@@ -99,20 +101,20 @@ export default function BentoGrid() {
       <div className="pointer-events-none absolute inset-0">
         <motion.div
           aria-hidden
-          animate={{ x: [0, 40, -24, 0], y: [0, -30, 20, 0], scale: [1, 1.08, 0.96, 1] }}
-          transition={{ duration: 28, repeat: Infinity, ease: "easeInOut" }}
+          animate={isMobile ? undefined : { x: [0, 40, -24, 0], y: [0, -30, 20, 0], scale: [1, 1.08, 0.96, 1] }}
+          transition={isMobile ? undefined : { duration: 28, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -left-24 -top-32 h-[34rem] w-[34rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(56,189,248,0.2)_0%,rgba(59,130,246,0.12)_35%,rgba(15,23,42,0)_70%)] blur-3xl"
         />
         <motion.div
           aria-hidden
-          animate={{ x: [0, -34, 22, 0], y: [0, 20, -24, 0], scale: [1, 0.94, 1.06, 1] }}
-          transition={{ duration: 32, repeat: Infinity, ease: "easeInOut" }}
+          animate={isMobile ? undefined : { x: [0, -34, 22, 0], y: [0, 20, -24, 0], scale: [1, 0.94, 1.06, 1] }}
+          transition={isMobile ? undefined : { duration: 32, repeat: Infinity, ease: "easeInOut" }}
           className="absolute right-[-9rem] top-1/3 h-[38rem] w-[38rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(147,51,234,0.2)_0%,rgba(79,70,229,0.12)_38%,rgba(15,23,42,0)_72%)] blur-3xl"
         />
         <motion.div
           aria-hidden
-          animate={{ x: [0, 18, -16, 0], y: [0, -12, 16, 0], opacity: [0.18, 0.25, 0.16, 0.18] }}
-          transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }}
+          animate={isMobile ? undefined : { x: [0, 18, -16, 0], y: [0, -12, 16, 0], opacity: [0.18, 0.25, 0.16, 0.18] }}
+          transition={isMobile ? undefined : { duration: 24, repeat: Infinity, ease: "easeInOut" }}
           className="absolute -bottom-24 -right-20 h-[24rem] w-[24rem] rounded-full bg-[radial-gradient(circle_at_center,rgba(163,230,53,0.18)_0%,rgba(163,230,53,0.08)_35%,rgba(15,23,42,0)_68%)] blur-3xl"
         />
         <div className="absolute inset-0 bg-black/45" />
@@ -134,13 +136,13 @@ export default function BentoGrid() {
             <motion.article
               key={id}
               variants={cardReveal}
-              whileHover={{ y: -10 }}
+              whileHover={isMobile ? undefined : { y: -10 }}
               className={`rounded-2xl border border-white/10 bg-zinc-900/50 p-6 transition-all duration-300 hover:border-white/30 hover:shadow-lg hover:shadow-black/20 ${className}`}
             >
               <Icon className="h-7 w-7 text-lime-400" aria-hidden />
               <h3 className="mt-4 text-lg font-semibold text-white">{title}</h3>
               <p className="mt-2 text-zinc-300 text-sm leading-relaxed">{description}</p>
-              {id === "main" && <AutonomyTradeVisualization />}
+              {id === "main" && <AutonomyTradeVisualization isMobile={isMobile} />}
             </motion.article>
           ))}
         </div>

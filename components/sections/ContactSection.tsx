@@ -3,9 +3,11 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { useIsMobile } from "../../src/lib/useIsMobile";
 
 export default function ContactSection() {
   const t = useTranslations("contact");
+  const isMobile = useIsMobile();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -70,9 +72,9 @@ export default function ContactSection() {
   return (
     <motion.section
       id="kontakt"
-      initial={{ opacity: 1, y: 0 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.2, ease: "easeOut" }}
+      initial={isMobile ? false : { opacity: 1, y: 0 }}
+      animate={isMobile ? undefined : { opacity: 1, y: 0 }}
+      transition={isMobile ? undefined : { duration: 0.2, ease: "easeOut" }}
       className="w-full py-24 md:py-32 bg-zinc-950 scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">
