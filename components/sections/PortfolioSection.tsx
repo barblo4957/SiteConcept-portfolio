@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import IntegraVisual from "./portfolio/IntegraVisual";
+import ChelVisual from "./portfolio/ChelVisual";
+import PianapurVisual from "./portfolio/PianapurVisual";
 import TenisligaVisual from "./portfolio/TenisligaVisual";
 
 const sectionReveal = {
@@ -74,91 +75,10 @@ export default function PortfolioSection() {
           {t("sectionTitle")}
         </motion.h2>
 
-        {/* Integra */}
-        <motion.div
-          variants={cardReveal}
-          className="mt-14 grid grid-cols-1 items-center gap-10 md:mt-16 md:grid-cols-3 md:gap-8"
-        >
-          <div className="md:col-span-2">
-            <h3 className="text-3xl font-semibold text-white md:text-4xl">{t("integra.title")}</h3>
-            <ProjectTag text={t("integra.tag")} />
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300">{t("integra.description")}</p>
-            <a
-              href="https://integra-automatyka.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20"
-            >
-              {t("cta")}
-            </a>
-          </div>
-          <div className="md:col-span-1">
-            <IntegraVisual
-              portfolioLabel={t("eyebrow")}
-              automationLabel={t("integra.mockAutomation")}
-              reservationsLabel={t("integra.mockReservations")}
-              ctaHref="https://integra-automatyka.vercel.app"
-              ctaLabel={t("cta")}
-            />
-          </div>
-        </motion.div>
-
-        {/* Pianapur */}
-        <motion.div
-          variants={cardReveal}
-          className="mt-20 grid grid-cols-1 items-center gap-10 border-t border-white/[0.06] pt-20 md:grid-cols-3 md:gap-8"
-        >
-          <div className="md:col-span-2">
-            <h3 className="text-3xl font-semibold text-white md:text-4xl">{t("pianapur.title")}</h3>
-            <ProjectTag text={t("pianapur.tag")} />
-            <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300">{t("pianapur.description")}</p>
-            <a
-              href="https://pianapur.com"
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20"
-            >
-              {t("cta")}
-            </a>
-          </div>
-          <div className="md:col-span-1">
-            <div className="rounded-2xl border border-lime-400/15 bg-zinc-900/40 p-5 backdrop-blur-sm md:p-6">
-              <TenisligaVisual
-                qrCaption={t("pianapur.qrCaption")}
-                rankingHeading={t("pianapur.mockRankingHeading")}
-                pointsUnit={t("pianapur.mockPointsUnit")}
-              />
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Pianapur case study */}
-        <motion.div
-          variants={cardReveal}
-          className="mt-20 rounded-2xl border border-white/10 bg-zinc-950/60 p-6 md:p-10"
-        >
-          <p className="text-sm font-bold tracking-widest text-lime-400">{t("pianapurCaseStudy.eyebrow")}</p>
-          <h3 className="mt-3 text-2xl font-semibold text-white md:text-3xl">{t("pianapurCaseStudy.title")}</h3>
-          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("pianapurCaseStudy.problemLabel")}</p>
-              <p className="mt-3 leading-relaxed text-zinc-300">{t("pianapurCaseStudy.problem")}</p>
-            </div>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("pianapurCaseStudy.solutionLabel")}</p>
-              <p className="mt-3 leading-relaxed text-zinc-300">{t("pianapurCaseStudy.solution")}</p>
-            </div>
-            <div>
-              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("pianapurCaseStudy.effectLabel")}</p>
-              <p className="mt-3 leading-relaxed text-zinc-300">{t("pianapurCaseStudy.effect")}</p>
-            </div>
-          </div>
-        </motion.div>
-
         {/* Tenisliga */}
         <motion.div
           variants={cardReveal}
-          className="mt-20 grid grid-cols-1 items-center gap-10 border-t border-white/[0.06] pt-20 md:grid-cols-3 md:gap-8"
+          className="mt-14 grid grid-cols-1 items-center gap-10 md:mt-16 md:grid-cols-3 md:gap-8"
         >
           <div className="md:col-span-2">
             <div className="flex flex-wrap items-baseline gap-3">
@@ -208,6 +128,98 @@ export default function PortfolioSection() {
             <div>
               <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("caseStudy.effectLabel")}</p>
               <p className="mt-3 leading-relaxed text-zinc-300">{t("caseStudy.effect")}</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Pianapur */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-20 grid grid-cols-1 items-center gap-10 border-t border-white/[0.06] pt-20 md:grid-cols-3 md:gap-8"
+        >
+          <div className="md:col-span-2">
+            <h3 className="text-3xl font-semibold text-white md:text-4xl">{t("pianapur.title")}</h3>
+            <ProjectTag text={t("pianapur.tag")} />
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300">{t("pianapur.description")}</p>
+            <a
+              href="https://pianapur.com"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20"
+            >
+              {t("cta")}
+            </a>
+          </div>
+          <div className="md:col-span-1">
+            <PianapurVisual />
+          </div>
+        </motion.div>
+
+        {/* Pianapur case study */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-20 rounded-2xl border border-white/10 bg-zinc-950/60 p-6 md:p-10"
+        >
+          <p className="text-sm font-bold tracking-widest text-lime-400">{t("pianapurCaseStudy.eyebrow")}</p>
+          <h3 className="mt-3 text-2xl font-semibold text-white md:text-3xl">{t("pianapurCaseStudy.title")}</h3>
+          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("pianapurCaseStudy.problemLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("pianapurCaseStudy.problem")}</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("pianapurCaseStudy.solutionLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("pianapurCaseStudy.solution")}</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("pianapurCaseStudy.effectLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("pianapurCaseStudy.effect")}</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Chel Proyectar */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-20 grid grid-cols-1 items-center gap-10 border-t border-white/[0.06] pt-20 md:grid-cols-3 md:gap-8"
+        >
+          <div className="md:col-span-2">
+            <h3 className="text-3xl font-semibold text-white md:text-4xl">{t("chel.title")}</h3>
+            <ProjectTag text={t("chel.tag")} />
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300">{t("chel.description")}</p>
+            <a
+              href="https://chel-proyectar-acht.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20"
+            >
+              {t("cta")}
+            </a>
+          </div>
+          <div className="md:col-span-1">
+            <ChelVisual />
+          </div>
+        </motion.div>
+
+        {/* Chel Proyectar case study */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-20 rounded-2xl border border-white/10 bg-zinc-950/60 p-6 md:p-10"
+        >
+          <p className="text-sm font-bold tracking-widest text-lime-400">{t("chelCaseStudy.eyebrow")}</p>
+          <h3 className="mt-3 text-2xl font-semibold text-white md:text-3xl">{t("chelCaseStudy.title")}</h3>
+          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("chelCaseStudy.problemLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("chelCaseStudy.problem")}</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("chelCaseStudy.solutionLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("chelCaseStudy.solution")}</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("chelCaseStudy.effectLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("chelCaseStudy.effect")}</p>
             </div>
           </div>
         </motion.div>

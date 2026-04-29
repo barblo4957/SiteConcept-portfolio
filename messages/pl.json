@@ -20,17 +20,25 @@
     "eyebrow": "PORTFOLIO",
     "sectionTitle": "Wybrane realizacje",
     "cta": "Zobacz online",
-    "integra": {
-      "title": "Integra Automatyka",
-      "tag": "Service Platform / Cal.com Integration",
-      "description": "Nowoczesna platforma dla branży automatyki i pomiarów. Wdrożenie inteligentnego systemu rezerwacji terminów (Cal.com), który eliminuje ręczne planowanie pomiarów i optymalizuje czas pracy specjalisty.",
-      "mockAutomation": "Automatyzacja rezerwacji",
-      "mockReservations": "Rezerwacje"
+    "chel": {
+      "title": "Chel Proyectar",
+      "tag": "BUSINESS SITE / BILINGUAL / WHATSAPP INTEGRATION",
+      "description": "Strona dla hiszpańskiej firmy specjalizującej się w tynkowaniu maszynowym i wykończeniach wnętrz. 10+ lat doświadczenia, 200+ zrealizowanych projektów."
+    },
+    "chelCaseStudy": {
+      "eyebrow": "CASE STUDY",
+      "title": "Chel Proyectar — dwujęzyczny kanał wycen",
+      "problemLabel": "Problem",
+      "problem": "Firma działała bez strony internetowej — klienci nie mieli gdzie sprawdzić usług ani poprosić o wycenę w swoim języku.",
+      "solutionLabel": "Rozwiązanie",
+      "solution": "Dwujęzyczna strona ES/EN z 4 kategoriami usług, galerią realizacji, procesem współpracy i formularzem wyceny wysyłającym zapytania przez WhatsApp.",
+      "effectLabel": "Efekt",
+      "effect": "Firma dostępna dla klientów hiszpańsko i anglojęzycznych — zapytania o wycenę trafiają bezpośrednio do właściciela na WhatsApp."
     },
     "pianapur": {
       "title": "Pianapur",
       "tag": "BUSINESS SITE / WHATSAPP INTEGRATION",
-      "description": "Strona dla lokalnej firmy izolacyjnej działającej w 3 województwach. Natrysk pianą PUR i celulozą, 5.0 w Google z 111 opinii.",
+      "description": "Strona dla lokalnej firmy izolacyjnej działającej w 3 województwach. Natrysk pianą PUR i celulozą, 5.0 w Google z 100+ opinii.",
       "qrCaption": "Zapytanie o wycenę",
       "mockRankingHeading": "Formularz + WhatsApp",
       "mockPointsUnit": "lead"
@@ -70,16 +78,16 @@
     "headline": "Strategia oparta na danych, nie na domysłach.",
     "method": {
       "analysis": {
-        "title": "Analiza",
-        "description": "Mapujemy wąskie gardła: od strony i ruchu po powtarzalne procesy ręczne — komunikacja, arkusze, harmonogramy i miejsca utraty konwersji."
+        "title": "Rozpoznanie",
+        "description": "Słuchamy co boli — mapujemy procesy, ruch i miejsca gdzie tracisz klientów. Nie zakładamy z góry."
       },
       "design": {
-        "title": "Design",
-        "description": "Projektujemy czytelne doświadczenie — od strony marketingowej po produkt mobilny — które buduje zaufanie i prowadzi użytkownika do działania."
+        "title": "Budowa",
+        "description": "Kod + integracje które działają od razu. Formularz, rezerwacje, mapy — gotowe w pierwszym deployu."
       },
       "results": {
-        "title": "Wyniki",
-        "description": "Wdrażamy, mierzymy i iterujemy: czas pracy, jakość leadów i spójność danych, żeby każda decyzja miała odzwierciedlenie w wyniku."
+        "title": "Wzrost",
+        "description": "Mierzymy efekty i iterujemy. Czas pracy, jakość leadów, spójność danych — każda decyzja ma odzwierciedlenie w wyniku."
       }
     },
     "subtitle": "Jak pomagamy",
@@ -102,23 +110,23 @@
   "bento": {
     "eyebrow": "NASZE REALIZACJE",
     "headline": "Przewagi, które przekładają się na wynik.",
-    "main_title": "Zarabiaj, gdy Twój zespół odpoczywa",
-    "main_description": "Budujemy autonomiczne systemy, które samodzielnie domykają sprzedaż i obsługują procesy 24/7. Uwalniamy Twój czas, delegując powtarzalne zadania do sztucznej inteligencji.",
-    "data_title": "Twoje sekrety zostają w firmie",
-    "data_description": "Budujemy prywatne rozwiązania AI. Twoja unikalna wiedza i dane klientów są bezpieczne — nigdy nie opuszczają Twojej infrastruktury i nie karmią publicznych modeli.",
-    "interface_title": "Koniec z porzuconymi koszykami",
-    "interface_description": "Eliminujemy bariery decyzyjne. Tworzymy interfejsy tak szybkie i intuicyjne, że klienci przechodzą od potrzeby do zakupu w kilka sekund, bez cienia frustracji.",
-    "growth_title": "Skalowanie bez nowych etatów",
-    "growth_description": "Twoje AI uczy się z każdą interakcją. Automatycznie optymalizuje lejki sprzedażowe i obniża koszty operacyjne, pozwalając Ci rosnąć bez powiększania zespołu.",
-    "ecosystem_title": "Marka, o której będzie głośno",
-    "ecosystem_description": "Wykorzystaj głos i wizję, by stworzyć relację, której konkurencja nie jest w stanie skopiować. Twoja obecność w sieci staje się inteligentnym partnerem dla klienta."
+    "main_title": "Strona która generuje leady, nie tylko wygląda",
+    "main_description": "Każdy projekt kończy się formularzem który działa — zapytania trafiają bezpośrednio do klienta przez WhatsApp, bez pośredników i bez czekania na maila.",
+    "data_title": "Integracje które działają od razu",
+    "data_description": "Cal.com, WhatsApp, Google Maps — wdrażam gotowe narzędzia które oszczędzają czas od pierwszego dnia.",
+    "interface_title": "Nie tylko wizytówka — buduję produkty",
+    "interface_description": "TenisLiga to platforma SaaS z QR kodami i rankingiem live. Jeśli masz pomysł na produkt — potrafię go zbudować.",
+    "growth_title": "AI jako narzędzie, nie wymówka",
+    "growth_description": "Pracuję z Cursor i Claude Code. Vibe coding oznacza że dostarczam szybciej niż tradycyjna agencja, bez kompromisów na jakości.",
+    "ecosystem_title": "Jeden dostawca, pełna obsługa",
+    "ecosystem_description": "Od projektu, przez wdrożenie, po opiekę techniczną i SEO. Nie musisz koordynować grafika, developera i agencji SEO osobno."
   },
   "pricing": {
     "eyebrow": "CENNIK",
     "headline": "Skala oszczędności i autonomii — dopasowana do Ciebie.",
     "starter": {
       "name": "Landing Page Ultra",
-      "tagline": "2000 zł za One-page",
+      "tagline": "od 2500 zł za One-page",
       "description": "Jedna strona / do 3 sekcji dodatkowych, formularz kontaktowy i wynik wydajności 95+ — gotowe w 7–14 dni.",
       "feature1": "Jedna strona / do 3 sekcji dodatkowych",
       "feature2": "Formularz kontaktowy dla leadów",
@@ -127,7 +135,7 @@
     },
     "business": {
       "name": "Business Site",
-      "tagline": "3500 zł za serwis do 10 stron",
+      "tagline": "od 3500 zł za serwis do 10 stron",
       "badge": "Najpopularniejszy",
       "description": "Do 10 podstron, CMS do zarządzania treścią, SEO on-page i analityka — realizacja w 3–6 tygodni.",
       "feature1": "Do 10 podstron",

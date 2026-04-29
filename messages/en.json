@@ -20,17 +20,25 @@
     "eyebrow": "PORTFOLIO",
     "sectionTitle": "Selected work",
     "cta": "View live",
-    "integra": {
-      "title": "Integra Automatyka",
-      "tag": "Service Platform / Cal.com Integration",
-      "description": "A modern platform for the automation and measurement industry. Implementation of an intelligent booking system (Cal.com) that eliminates manual scheduling and optimizes professional workflow.",
-      "mockAutomation": "Booking automation",
-      "mockReservations": "Bookings"
+    "chel": {
+      "title": "Chel Proyectar",
+      "tag": "BUSINESS SITE / BILINGUAL / WHATSAPP INTEGRATION",
+      "description": "A website for a Spanish company specializing in machine plastering and interior finishing. 10+ years of experience and 200+ completed projects."
+    },
+    "chelCaseStudy": {
+      "eyebrow": "CASE STUDY",
+      "title": "Chel Proyectar — bilingual quote channel",
+      "problemLabel": "Problem",
+      "problem": "The company operated without a website, so clients had nowhere to review services or request a quote in their language.",
+      "solutionLabel": "Solution",
+      "solution": "A bilingual ES/EN website with 4 service categories, a project gallery, a cooperation process section, and a quote form that sends inquiries via WhatsApp.",
+      "effectLabel": "Outcome",
+      "effect": "The company is now accessible to both Spanish- and English-speaking clients, and quote inquiries go directly to the owner on WhatsApp."
     },
     "pianapur": {
       "title": "Pianapur",
       "tag": "BUSINESS SITE / WHATSAPP INTEGRATION",
-      "description": "A website for a local insulation company operating across 3 provinces. PUR foam and cellulose insulation, 5.0 on Google with 111 reviews.",
+      "description": "A website for a local insulation company operating across 3 provinces. PUR foam and cellulose insulation, 5.0 on Google with 100+ reviews.",
       "qrCaption": "Quote request",
       "mockRankingHeading": "Form + WhatsApp",
       "mockPointsUnit": "lead"
@@ -70,16 +78,16 @@
     "headline": "Strategy driven by data, not guesswork.",
     "method": {
       "analysis": {
-        "title": "Analysis",
-        "description": "We map bottlenecks: from your site and traffic to repetitive manual work — messaging, spreadsheets, scheduling, and conversion drop-offs."
+        "title": "Discovery",
+        "description": "We listen to what hurts — mapping processes, traffic, and points where you lose customers. We do not assume up front."
       },
       "design": {
-        "title": "Design",
-        "description": "We design a clear experience — from marketing pages to mobile product — that builds trust and drives users to action."
+        "title": "Build",
+        "description": "Code plus integrations that work from day one. Forms, bookings, maps — ready in the first deploy."
       },
       "results": {
-        "title": "Results",
-        "description": "We ship, measure, and iterate: time saved, lead quality, and data consistency so every decision shows up in outcomes."
+        "title": "Growth",
+        "description": "We measure outcomes and iterate. Work time, lead quality, and data consistency — every decision is reflected in results."
       }
     },
     "subtitle": "How we help",
@@ -102,23 +110,23 @@
   "bento": {
     "eyebrow": "OUR WORK",
     "headline": "Advantages that translate into outcomes.",
-    "main_title": "Earn while your team rests",
-    "main_description": "We build autonomous systems that close sales and handle processes 24/7. We free your team by delegating repetitive work to AI.",
-    "data_title": "Your secrets stay in-house",
-    "data_description": "We build private AI solutions. Your know-how and customer data stay secure — they never leave your infrastructure and never train public models.",
-    "interface_title": "No more abandoned carts",
-    "interface_description": "We remove decision friction. We design interfaces so fast and intuitive that customers move from intent to purchase in seconds, without frustration.",
-    "growth_title": "Scale without new headcount",
-    "growth_description": "Your AI improves with every interaction. It optimizes funnels and lowers operational costs automatically, so you can grow without expanding the team.",
-    "ecosystem_title": "A brand people talk about",
-    "ecosystem_description": "Use voice and vision to build a relationship your competitors cannot replicate. Your web presence becomes an intelligent partner for every customer."
+    "main_title": "A website that generates leads, not just looks good",
+    "main_description": "Every project ends with a form that works — inquiries go directly to the client via WhatsApp, without middlemen and without waiting for email.",
+    "data_title": "Integrations that work from day one",
+    "data_description": "Cal.com, WhatsApp, Google Maps — I implement ready-to-use tools that save time from day one.",
+    "interface_title": "Not just a brochure site — I build products",
+    "interface_description": "TenisLiga is a SaaS platform with QR codes and live rankings. If you have a product idea, I can build it.",
+    "growth_title": "AI as a tool, not an excuse",
+    "growth_description": "I work with Cursor and Claude Code. Vibe coding means I deliver faster than a traditional agency, with no compromises on quality.",
+    "ecosystem_title": "One provider, full-service delivery",
+    "ecosystem_description": "From design and implementation to technical care and SEO. You do not need to coordinate a designer, developer, and SEO agency separately."
   },
   "pricing": {
     "eyebrow": "PRICING",
     "headline": "Scale of savings and autonomy — tailored to you.",
     "starter": {
       "name": "Landing Page Ultra",
-      "tagline": "2000 PLN for One-page",
+      "tagline": "from 2500 PLN for One-page",
       "description": "One page / up to 3 extra sections, a contact form, and a 95+ performance score — delivered in 7–14 days.",
       "feature1": "One page / up to 3 extra sections",
       "feature2": "Contact form for qualified leads",
@@ -127,7 +135,7 @@
     },
     "business": {
       "name": "Business Site",
-      "tagline": "3500 PLN for a 10-page website",
+      "tagline": "from 3500 PLN for a 10-page website",
       "badge": "Most popular",
       "description": "Up to 10 pages, a CMS to manage content, on-page SEO, and analytics — delivered in 3–6 weeks.",
       "feature1": "Up to 10 pages",
