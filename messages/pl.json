@@ -74,7 +74,7 @@
     }
   },
   "strategy": {
-    "eyebrow": "NASZA METODA",
+    "eyebrow": "METODA",
     "headline": "Strategia oparta na danych, nie na domysłach.",
     "method": {
       "analysis": {
@@ -108,7 +108,7 @@
     }
   },
   "bento": {
-    "eyebrow": "NASZE REALIZACJE",
+    "eyebrow": "CO NAS WYRÓŻNIA",
     "headline": "Przewagi, które przekładają się na wynik.",
     "main_title": "Strona która generuje leady, nie tylko wygląda",
     "main_description": "Każdy projekt kończy się formularzem który działa — zapytania trafiają bezpośrednio do klienta przez WhatsApp, bez pośredników i bez czekania na maila.",

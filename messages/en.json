@@ -74,7 +74,7 @@
     }
   },
   "strategy": {
-    "eyebrow": "OUR METHOD",
+    "eyebrow": "METHOD",
     "headline": "Strategy driven by data, not guesswork.",
     "method": {
       "analysis": {
@@ -108,7 +108,7 @@
     }
   },
   "bento": {
-    "eyebrow": "OUR WORK",
+    "eyebrow": "WHAT SETS US APART",
     "headline": "Advantages that translate into outcomes.",
     "main_title": "A website that generates leads, not just looks good",
     "main_description": "Every project ends with a form that works — inquiries go directly to the client via WhatsApp, without middlemen and without waiting for email.",
