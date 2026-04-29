@@ -5,22 +5,21 @@ import { Rocket, Shield, Zap, Target, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const sectionReveal = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 1, y: 0 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.25,
       ease: "easeOut" as const,
-      staggerChildren: 0.08,
-      delayChildren: 0.1,
+      staggerChildren: 0.04,
     },
   },
 };
 
 const cardReveal = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" as const } },
 };
 
 const BENTO_KEYS = [
@@ -34,9 +33,9 @@ const BENTO_KEYS = [
 function AutonomyTradeVisualization() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 1, y: 0 }}
       animate={{ opacity: 0.6, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
       className="mt-6 rounded-[10px] border border-[#1a1a1a] bg-[#0d0d0d] p-4 shadow-lg shadow-black/20"
     >
       <div className="flex flex-wrap items-center gap-2 text-[11px] sm:text-xs">
@@ -91,9 +90,8 @@ export default function BentoGrid() {
 
   return (
     <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      initial="visible"
+      animate="visible"
       variants={sectionReveal}
       id="zalety"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"

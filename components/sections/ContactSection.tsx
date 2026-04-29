@@ -70,10 +70,9 @@ export default function ContactSection() {
   return (
     <motion.section
       id="kontakt"
-      initial={{ opacity: 0, y: 28 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      initial={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
       className="w-full py-24 md:py-32 bg-zinc-950 scroll-mt-24"
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full">

@@ -7,22 +7,21 @@ import PianapurVisual from "./portfolio/PianapurVisual";
 import TenisligaVisual from "./portfolio/TenisligaVisual";
 
 const sectionReveal = {
-  hidden: { opacity: 0, y: 32 },
+  hidden: { opacity: 1, y: 0 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.25,
       ease: "easeOut" as const,
-      staggerChildren: 0.08,
-      delayChildren: 0.1,
+      staggerChildren: 0.04,
     },
   },
 };
 
 const cardReveal = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" as const } },
 };
 
 function ProjectTag({ text }: { text: string }) {
@@ -38,9 +37,8 @@ export default function PortfolioSection() {
 
   return (
     <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-80px" }}
+      initial="visible"
+      animate="visible"
       variants={sectionReveal}
       id="portfolio"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"

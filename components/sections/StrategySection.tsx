@@ -5,22 +5,21 @@ import { Search, Layout, BarChart3 } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const sectionReveal = {
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 1, y: 0 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      duration: 0.6,
+      duration: 0.25,
       ease: "easeOut" as const,
-      staggerChildren: 0.1,
-      delayChildren: 0.15,
+      staggerChildren: 0.04,
     },
   },
 };
 
 const itemReveal = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2, ease: "easeOut" as const } },
 };
 
 export default function StrategySection() {
@@ -48,9 +47,8 @@ export default function StrategySection() {
 
   return (
     <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-60px" }}
+      initial="visible"
+      animate="visible"
       variants={sectionReveal}
       id="strategia"
       className="w-full py-24 md:py-32 bg-zinc-950 scroll-mt-24"
