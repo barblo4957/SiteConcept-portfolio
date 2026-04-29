@@ -18,9 +18,34 @@
   },
   "portfolio": {
     "eyebrow": "PORTFOLIO",
-    "title": "Integra Automatyka",
-    "tag": "Service Platform / Cal.com Integration",
-    "description": "Nowoczesna platforma dla branży automatyki i pomiarów. Wdrożenie inteligentnego systemu rezerwacji terminów (Cal.com), który eliminuje ręczne planowanie pomiarów i optymalizuje czas pracy specjalisty."
+    "sectionTitle": "Wybrane realizacje",
+    "cta": "Zobacz online",
+    "integra": {
+      "title": "Integra Automatyka",
+      "tag": "Service Platform / Cal.com Integration",
+      "description": "Nowoczesna platforma dla branży automatyki i pomiarów. Wdrożenie inteligentnego systemu rezerwacji terminów (Cal.com), który eliminuje ręczne planowanie pomiarów i optymalizuje czas pracy specjalisty.",
+      "mockAutomation": "Automatyzacja rezerwacji",
+      "mockReservations": "Rezerwacje"
+    },
+    "tenisliga": {
+      "title": "Tenisliga",
+      "badge": "SaaS",
+      "tag": "Sport platform / QR automation / Real-time ranking",
+      "description": "Inteligentny system zarządzania rozgrywkami sportowymi. Zamieniliśmy lawinę SMS-ów i arkusze Excel na zautomatyzowaną platformę: zawodnicy sami raportują wyniki prosto z kortu, a ranking żyje w czasie rzeczywistym.",
+      "qrCaption": "Wynik z kortu",
+      "mockRankingHeading": "Ranking — I liga",
+      "mockPointsUnit": "pkt"
+    },
+    "caseStudy": {
+      "eyebrow": "CASE STUDY",
+      "title": "Tenisliga — od chaosu do self-service",
+      "problemLabel": "Problem",
+      "problem": "Organizator poświęcał ok. 5 godzin tygodniowo na przepisywanie wyników z SMS-ów do Excela oraz dopytywanie w grupach komunikatorem.",
+      "solutionLabel": "Rozwiązanie",
+      "solution": "Self-service dla zawodników: skan QR na korcie, wybór meczu, zgłoszenie wyniku. Ty jako gospodarz zatwierdzasz — pełna kontrola bez ręcznego przepisywania.",
+      "effectLabel": "Efekt",
+      "effect": "Aktualizacja rankingu w sekundach po meczu zamiast godzin pracy „po fakcie”. Organizator nie traci czasu na obsługę wyników — dane zostają w jednym spójnym miejscu."
+    }
   },
   "strategy": {
     "eyebrow": "NASZA METODA",
@@ -28,15 +53,15 @@
     "method": {
       "analysis": {
         "title": "Analiza",
-        "description": "Rozbieramy Twoją obecną stronę na czynniki pierwsze: ruch, zachowanie użytkowników i punkty utraty konwersji."
+        "description": "Mapujemy wąskie gardła: od strony i ruchu po powtarzalne procesy ręczne — komunikacja, arkusze, harmonogramy i miejsca utraty konwersji."
       },
       "design": {
         "title": "Design",
-        "description": "Projektujemy doświadczenie, które buduje zaufanie od pierwszego kliknięcia i prowadzi użytkownika do działania."
+        "description": "Projektujemy czytelne doświadczenie — od strony marketingowej po produkt mobilny — które buduje zaufanie i prowadzi użytkownika do działania."
       },
       "results": {
         "title": "Wyniki",
-        "description": "Wdrażamy i mierzymy efekty, aby każda decyzja przekładała się na realny wzrost jakości leadów i sprzedaży."
+        "description": "Wdrażamy, mierzymy i iterujemy: czas pracy, jakość leadów i spójność danych, żeby każda decyzja miała odzwierciedlenie w wyniku."
       }
     },
     "subtitle": "Jak pomagamy",
@@ -100,7 +125,8 @@
       "feature2": "Integracje API (CRM, newsletter, płatności)",
       "feature3": "Dedykowane wsparcie przez 3 miesiące",
       "feature4": "Czas realizacji: 6–12 tygodni"
-    }
+    },
+    "saasExample": "Budujemy też produkty z własnym modelem subskrypcyjnym — przykład: platforma Tenisliga."
   },
   "contact": {
     "title": "Gotowy na zmianę?",

@@ -72,7 +72,7 @@ export default function PricingSection() {
           {t("headline")}
         </motion.h2>
 
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {tiers.map(({ name, tagline, description, badge, features, highlighted }) => (
             <motion.article
               key={name}
@@ -107,6 +107,13 @@ export default function PricingSection() {
             </motion.article>
           ))}
         </div>
+
+        <motion.p
+          variants={cardReveal}
+          className="mx-auto mt-12 max-w-3xl text-center text-sm leading-relaxed text-zinc-500"
+        >
+          {t("saasExample")}
+        </motion.p>
       </div>
     </motion.section>
   );

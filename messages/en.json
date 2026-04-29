@@ -18,9 +18,34 @@
   },
   "portfolio": {
     "eyebrow": "PORTFOLIO",
-    "title": "Integra Automatyka",
-    "tag": "Service Platform / Cal.com Integration",
-    "description": "A modern platform for the automation and measurement industry. Implementation of an intelligent booking system (Cal.com) that eliminates manual scheduling and optimizes professional workflow."
+    "sectionTitle": "Selected work",
+    "cta": "View live",
+    "integra": {
+      "title": "Integra Automatyka",
+      "tag": "Service Platform / Cal.com Integration",
+      "description": "A modern platform for the automation and measurement industry. Implementation of an intelligent booking system (Cal.com) that eliminates manual scheduling and optimizes professional workflow.",
+      "mockAutomation": "Booking automation",
+      "mockReservations": "Bookings"
+    },
+    "tenisliga": {
+      "title": "Tenisliga",
+      "badge": "SaaS",
+      "tag": "Sport platform / QR automation / Real-time ranking",
+      "description": "An intelligent system for running sports leagues. We replaced SMS threads and Excel sheets with an automated platform where players report results from the court and the ranking updates in real time.",
+      "qrCaption": "Result from court",
+      "mockRankingHeading": "Table — Division I",
+      "mockPointsUnit": "pts"
+    },
+    "caseStudy": {
+      "eyebrow": "CASE STUDY",
+      "title": "Tenisliga — from chaos to self-service",
+      "problemLabel": "Problem",
+      "problem": "The organiser spent around five hours a week copying results from SMS into spreadsheets and chasing updates in group chats.",
+      "solutionLabel": "Solution",
+      "solution": "Player self-service: scan a QR code at the court, pick the match, submit the score. You approve as host — full control without manual transcription.",
+      "effectLabel": "Outcome",
+      "effect": "Ranking updates in seconds after a match instead of hours of catch-up work. No organiser time spent on score handling — data stays in one consistent system."
+    }
   },
   "strategy": {
     "eyebrow": "OUR METHOD",
@@ -28,15 +53,15 @@
     "method": {
       "analysis": {
         "title": "Analysis",
-        "description": "We break down your current site: traffic, user behaviour and conversion drop-off points."
+        "description": "We map bottlenecks: from your site and traffic to repetitive manual work — messaging, spreadsheets, scheduling, and conversion drop-offs."
       },
       "design": {
         "title": "Design",
-        "description": "We design an experience that builds trust from the first click and guides users to action."
+        "description": "We design a clear experience — from marketing pages to mobile product — that builds trust and drives users to action."
       },
       "results": {
         "title": "Results",
-        "description": "We implement and measure outcomes so every decision translates into better lead quality and sales."
+        "description": "We ship, measure, and iterate: time saved, lead quality, and data consistency so every decision shows up in outcomes."
       }
     },
     "subtitle": "How we help",
@@ -100,7 +125,8 @@
       "feature2": "API integrations (CRM, newsletter, payments)",
       "feature3": "Dedicated support for 3 months",
       "feature4": "Delivery time: 6–12 weeks"
-    }
+    },
+    "saasExample": "We also build products with their own subscription model — example: the Tenisliga platform."
   },
   "contact": {
     "title": "Ready for a change?",

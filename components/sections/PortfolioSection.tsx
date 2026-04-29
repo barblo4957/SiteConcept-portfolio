@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import IntegraVisual from "./portfolio/IntegraVisual";
+import TenisligaVisual from "./portfolio/TenisligaVisual";
 
 const sectionReveal = {
   hidden: { opacity: 0, y: 32 },
@@ -22,6 +24,14 @@ const cardReveal = {
   visible: { opacity: 1, y: 0 },
 };
 
+function ProjectTag({ text }: { text: string }) {
+  return (
+    <div className="mt-3 inline-flex max-w-full rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-left text-[11px] font-semibold uppercase leading-snug tracking-widest text-lime-400 sm:text-xs">
+      {text}
+    </div>
+  );
+}
+
 export default function PortfolioSection() {
   const t = useTranslations("portfolio");
 
@@ -34,7 +44,6 @@ export default function PortfolioSection() {
       id="portfolio"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"
     >
-      {/* Mesh gradient (behind content) */}
       <div className="pointer-events-none absolute inset-0">
         <motion.div
           aria-hidden
@@ -57,80 +66,100 @@ export default function PortfolioSection() {
         <div className="absolute inset-0 bg-black/45" />
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
-        <motion.p variants={cardReveal} className="text-lime-400 font-bold tracking-widest text-sm">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12">
+        <motion.p variants={cardReveal} className="text-sm font-bold tracking-widest text-lime-400">
           {t("eyebrow")}
         </motion.p>
+        <motion.h2 variants={cardReveal} className="mt-4 max-w-3xl text-3xl font-semibold text-white md:text-4xl">
+          {t("sectionTitle")}
+        </motion.h2>
 
-        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-center">
-          <motion.div variants={cardReveal} className="md:col-span-2">
-            <h2 className="text-4xl md:text-5xl text-white font-semibold max-w-3xl">
-              {t("title")}
-            </h2>
-            <div className="mt-3 inline-flex items-center rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-lime-400">
-              {t("tag")}
-            </div>
-            <p className="mt-4 text-zinc-300 text-base leading-relaxed max-w-2xl">
-              {t("description")}
-            </p>
-          </motion.div>
-
-          {/* Glass card mockup */}
-          <motion.div
-            variants={cardReveal}
-            className="rounded-2xl border border-lime-400/20 bg-zinc-900/50 backdrop-blur-sm p-5 md:p-6 shadow-lg shadow-black/20"
-          >
-            <div className="flex items-start gap-4">
-              <div className="flex-1">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold uppercase tracking-widest text-lime-400">
-                    {t("title")}
-                  </span>
-                  <span className="text-[10px] text-zinc-500">CAL.COM</span>
-                </div>
-                <div className="mt-3 h-2 rounded-full bg-white/10 overflow-hidden">
-                  <div className="h-full w-2/3 bg-lime-400/50" />
-                </div>
-                <div className="mt-4 space-y-2">
-                  <div className="flex items-center justify-between gap-3">
-                    <span className="text-[11px] text-zinc-400">Automatyzacja Rezerwacji</span>
-                    <span className="text-[11px] text-lime-400 font-semibold">AUTO</span>
-                  </div>
-                  <div className="h-3 rounded bg-white/10" />
-                  <div className="h-3 rounded bg-white/10" />
-                </div>
-                <div className="mt-4 grid grid-cols-2 gap-2">
-                  <div className="h-14 rounded-xl bg-white/5 border border-white/10" />
-                  <div className="h-14 rounded-xl bg-lime-400/10 border border-lime-400/25" />
-                </div>
-              </div>
-              <div className="hidden sm:block w-14">
-                <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-lime-400/25 to-violet-500/10 border border-white/10 blur-0" />
-              </div>
-            </div>
-
-            <div className="mt-4 rounded-xl border border-white/10 bg-black/20 p-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs text-zinc-400">Rezerwacje</span>
-                <span className="text-xs text-lime-400 font-semibold">CAL</span>
-              </div>
-              <div className="mt-3 h-3 rounded bg-white/10 overflow-hidden">
-                <div className="h-full w-4/5 bg-lime-400/45" />
-              </div>
-            </div>
-
+        {/* Integra */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-14 grid grid-cols-1 items-center gap-10 md:mt-16 md:grid-cols-3 md:gap-8"
+        >
+          <div className="md:col-span-2">
+            <h3 className="text-3xl font-semibold text-white md:text-4xl">{t("integra.title")}</h3>
+            <ProjectTag text={t("integra.tag")} />
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300">{t("integra.description")}</p>
             <a
               href="https://integra-automatyka.vercel.app"
               target="_blank"
               rel="noreferrer"
-              className="mt-4 inline-flex w-full items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 hover:bg-lime-400/20 transition-colors"
+              className="mt-6 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20"
             >
-              Zobacz online
+              {t("cta")}
             </a>
-          </motion.div>
-        </div>
+          </div>
+          <div className="md:col-span-1">
+            <IntegraVisual
+              portfolioLabel={t("eyebrow")}
+              automationLabel={t("integra.mockAutomation")}
+              reservationsLabel={t("integra.mockReservations")}
+              ctaHref="https://integra-automatyka.vercel.app"
+              ctaLabel={t("cta")}
+            />
+          </div>
+        </motion.div>
+
+        {/* Tenisliga */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-20 grid grid-cols-1 items-center gap-10 border-t border-white/[0.06] pt-20 md:grid-cols-3 md:gap-8"
+        >
+          <div className="md:col-span-2">
+            <div className="flex flex-wrap items-baseline gap-3">
+              <h3 className="text-3xl font-semibold text-white md:text-4xl">{t("tenisliga.title")}</h3>
+              <span className="rounded-md border border-lime-400/30 bg-lime-400/10 px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-lime-400">
+                {t("tenisliga.badge")}
+              </span>
+            </div>
+            <ProjectTag text={t("tenisliga.tag")} />
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-300">{t("tenisliga.description")}</p>
+            <a
+              href="https://www.tenisliga.pl"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20"
+            >
+              {t("cta")}
+            </a>
+          </div>
+          <div className="md:col-span-1">
+            <div className="rounded-2xl border border-lime-400/15 bg-zinc-900/40 p-5 backdrop-blur-sm md:p-6">
+              <TenisligaVisual
+                qrCaption={t("tenisliga.qrCaption")}
+                rankingHeading={t("tenisliga.mockRankingHeading")}
+                pointsUnit={t("tenisliga.mockPointsUnit")}
+              />
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Case study */}
+        <motion.div
+          variants={cardReveal}
+          className="mt-20 rounded-2xl border border-white/10 bg-zinc-950/60 p-6 md:p-10"
+        >
+          <p className="text-sm font-bold tracking-widest text-lime-400">{t("caseStudy.eyebrow")}</p>
+          <h3 className="mt-3 text-2xl font-semibold text-white md:text-3xl">{t("caseStudy.title")}</h3>
+          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-10">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("caseStudy.problemLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("caseStudy.problem")}</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("caseStudy.solutionLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("caseStudy.solution")}</p>
+            </div>
+            <div>
+              <p className="text-xs font-bold uppercase tracking-widest text-zinc-500">{t("caseStudy.effectLabel")}</p>
+              <p className="mt-3 leading-relaxed text-zinc-300">{t("caseStudy.effect")}</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </motion.section>
   );
 }
-
