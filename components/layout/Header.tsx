@@ -112,7 +112,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 w-full py-6 backdrop-blur-md bg-black/50 transition-all duration-300 ${
+        className={`sticky top-0 z-50 w-full py-6 bg-black/85 md:bg-black/50 md:backdrop-blur-md transition-all duration-300 ${
           isScrolled ? "border-b border-white/5" : ""
         }`}
       >
@@ -201,7 +201,7 @@ export default function Header() {
         className={`fixed inset-0 z-40 md:hidden ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"} ${isMobile ? "" : "transition-opacity duration-200"}`}
       >
         <div
-          className="absolute inset-0 backdrop-blur-xl bg-black/60"
+          className="absolute inset-0 bg-black/80 md:bg-black/60 md:backdrop-blur-xl"
           onClick={() => setMenuOpen(false)}
           aria-hidden
         />

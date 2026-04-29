@@ -98,7 +98,7 @@ export default function BentoGrid() {
       id="zalety"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"
     >
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 hidden md:block">
         <motion.div
           aria-hidden
           animate={isMobile ? undefined : { x: [0, 40, -24, 0], y: [0, -30, 20, 0], scale: [1, 1.08, 0.96, 1] }}

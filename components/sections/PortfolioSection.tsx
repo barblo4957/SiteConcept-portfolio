@@ -45,7 +45,7 @@ export default function PortfolioSection() {
       id="portfolio"
       className="relative w-full overflow-hidden bg-black py-24 md:py-32 scroll-mt-24"
     >
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 hidden md:block">
         <motion.div
           aria-hidden
           animate={isMobile ? undefined : { x: [0, 36, -20, 0], y: [0, -22, 18, 0], scale: [1, 1.06, 0.98, 1] }}
