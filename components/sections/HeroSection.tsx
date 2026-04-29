@@ -28,27 +28,10 @@ export default function HeroSection() {
   const headline = t("headline").split(" ");
 
   return (
-    <section id="onas" className="relative w-full py-24 md:py-32 overflow-hidden scroll-mt-24">
-      {/* Mesh teal → cyan → głęboki niebieski (stały odcień + lekka fala) */}
-      <div
-        className="pointer-events-none absolute inset-0 z-0"
-        aria-hidden
-      >
-        {/* Bazowy radial — bez animacji = stabilny kolor „docelowy” w każdej klatce */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_110%_75%_at_12%_8%,rgba(45,212,191,0.28)_0%,rgba(34,211,238,0.17)_38%,rgba(15,118,110,0.09)_55%,transparent_72%)]" />
-        <div
-          className="absolute -top-1/2 -left-[20%] h-[130%] w-[88%] rounded-full bg-teal-400/[0.24] blur-[88px] md:blur-[94px]"
-          style={{ animation: "hero-mesh-drift 22s ease-in-out infinite" }}
-        />
-        <div
-          className="absolute top-[38%] left-1/2 h-[70%] w-[62%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-400/[0.22] blur-[84px] md:blur-[92px]"
-          style={{ animation: "hero-mesh-drift 26s ease-in-out infinite 0.8s" }}
-        />
-        <div
-          className="absolute -bottom-[28%] -right-[18%] h-[95%] w-[72%] rounded-full bg-sky-950/[0.34] blur-[104px] md:blur-[110px]"
-          style={{ animation: "hero-mesh-drift 24s ease-in-out infinite 1.4s" }}
-        />
-      </div>
+    <section
+      id="onas"
+      className="relative flex min-h-[420px] w-full items-center overflow-hidden scroll-mt-24 bg-[linear-gradient(135deg,_#050d05_0%,_#081808_40%,_#040a04_100%)] py-24 md:py-28"
+    >
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
         <motion.h1

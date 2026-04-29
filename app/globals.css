@@ -1,22 +1,5 @@
 @import "tailwindcss";
 
-/* Hero: fala tylko przez ruch — stała jasność warstw (na nagraniu nie „mruga” cały mesh) */
-@keyframes hero-mesh-drift {
-  0%,
-  100% {
-    transform: scale(1) translate(0%, 0%) rotate(0deg);
-  }
-  25% {
-    transform: scale(1.06) translate(3%, -4%) rotate(1deg);
-  }
-  50% {
-    transform: scale(1.1) translate(-2%, 2.5%) rotate(-0.7deg);
-  }
-  75% {
-    transform: scale(1.04) translate(1.5%, 3.5%) rotate(0.35deg);
-  }
-}
-
 /* Delikatna pulsująca poświatę przycisku Kontakt */
 @keyframes glow-pulse {
   0%, 100% {

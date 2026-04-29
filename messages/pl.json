@@ -27,6 +27,24 @@
       "mockAutomation": "Automatyzacja rezerwacji",
       "mockReservations": "Rezerwacje"
     },
+    "pianapur": {
+      "title": "Pianapur",
+      "tag": "BUSINESS SITE / WHATSAPP INTEGRATION",
+      "description": "Strona dla lokalnej firmy izolacyjnej działającej w 3 województwach. Natrysk pianą PUR i celulozą, 5.0 w Google z 111 opinii.",
+      "qrCaption": "Zapytanie o wycenę",
+      "mockRankingHeading": "Formularz + WhatsApp",
+      "mockPointsUnit": "lead"
+    },
+    "pianapurCaseStudy": {
+      "eyebrow": "CASE STUDY",
+      "title": "Pianapur — powrót do widoczności online",
+      "problemLabel": "Problem",
+      "problem": "Poprzednia strona wygasła — firma działała bez obecności online, tracąc potencjalnych klientów szukających usług izolacyjnych w internecie.",
+      "solutionLabel": "Rozwiązanie",
+      "solution": "Nowa strona w Svelte z formularzem kontaktowym przesyłającym zapytania bezpośrednio na WhatsApp, mapą Google oraz sekcją wyceny.",
+      "effectLabel": "Efekt",
+      "effect": "Firma z powrotem widoczna online — klienci mogą w kilka sekund wysłać zapytanie o wycenę bez dzwonienia."
+    },
     "tenisliga": {
       "title": "Tenisliga",
       "badge": "SaaS",

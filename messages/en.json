@@ -27,6 +27,24 @@
       "mockAutomation": "Booking automation",
       "mockReservations": "Bookings"
     },
+    "pianapur": {
+      "title": "Pianapur",
+      "tag": "BUSINESS SITE / WHATSAPP INTEGRATION",
+      "description": "A website for a local insulation company operating across 3 provinces. PUR foam and cellulose insulation, 5.0 on Google with 111 reviews.",
+      "qrCaption": "Quote request",
+      "mockRankingHeading": "Form + WhatsApp",
+      "mockPointsUnit": "lead"
+    },
+    "pianapurCaseStudy": {
+      "eyebrow": "CASE STUDY",
+      "title": "Pianapur — back online and visible",
+      "problemLabel": "Problem",
+      "problem": "The previous website expired, so the company operated without an online presence and lost potential clients searching for insulation services on the internet.",
+      "solutionLabel": "Solution",
+      "solution": "A new Svelte website with a contact form that sends inquiries directly to WhatsApp, plus an embedded Google Map and a pricing section.",
+      "effectLabel": "Outcome",
+      "effect": "The company is visible online again — clients can send a quote request in seconds without calling."
+    },
     "tenisliga": {
       "title": "Tenisliga",
       "badge": "SaaS",
