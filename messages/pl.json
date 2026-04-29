@@ -5,7 +5,7 @@
     "subtitle": "Pierwsze wrażenie decyduje o zaufaniu. Daj swojej marce stronę, która od pierwszej sekundy pracuje na wynik.",
     "cta": {
       "primary": "Zacznijmy projekt",
-      "secondary": "Zobacz nasze realizacje"
+      "secondary": "Zobacz realizacje"
     }
   },
   "nav": {
@@ -108,7 +108,7 @@
     }
   },
   "bento": {
-    "eyebrow": "CO NAS WYRÓŻNIA",
+    "eyebrow": "UNIKALNE PODEJŚCIE",
     "headline": "Przewagi, które przekładają się na wynik.",
     "main_title": "Strona która generuje leady, nie tylko wygląda",
     "main_description": "Każdy projekt kończy się formularzem który działa — zapytania trafiają bezpośrednio do klienta przez WhatsApp, bez pośredników i bez czekania na maila.",
@@ -120,6 +120,25 @@
     "growth_description": "Pracuję z Cursor i Claude Code. Vibe coding oznacza że dostarczam szybciej niż tradycyjna agencja, bez kompromisów na jakości.",
     "ecosystem_title": "Jeden dostawca, pełna obsługa",
     "ecosystem_description": "Od projektu, przez wdrożenie, po opiekę techniczną i SEO. Nie musisz koordynować grafika, developera i agencji SEO osobno."
+  },
+  "servicesSection": {
+    "eyebrow": "USŁUGI",
+    "headline": "Co buduję dla Ciebie.",
+    "cta": "Zobacz cennik",
+    "cards": {
+      "websites": {
+        "title": "Strony internetowe",
+        "description": "Webflow, Next.js, Svelte — responsywne, szybkie i zoptymalizowane pod SEO. Od landinga po rozbudowany serwis firmowy."
+      },
+      "integrations": {
+        "title": "Integracje i automatyzacje",
+        "description": "WhatsApp, Cal.com, Google Maps, formularze — łączę Twoją stronę z narzędziami które już używasz."
+      },
+      "products": {
+        "title": "Produkty cyfrowe",
+        "description": "Platformy SaaS, aplikacje webowe, systemy z własną logiką — jeśli masz pomysł na produkt, potrafię go zbudować."
+      }
+    }
   },
   "pricing": {
     "eyebrow": "CENNIK",

@@ -81,8 +81,9 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const navLinks = [
-    { label: t("services"), href: "#cennik" },
+    { label: t("services"), href: "#uslugi" },
     { label: t("strategy"), href: "#strategia" },
+    { label: t("pricing"), href: "#cennik" },
     { label: t("portfolio"), href: "#portfolio" },
   ];
 

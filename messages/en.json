@@ -5,7 +5,7 @@
     "subtitle": "First impression builds trust. Give your brand a site that works for the result from the very first second.",
     "cta": {
       "primary": "Start a project",
-      "secondary": "View our work"
+      "secondary": "View portfolio"
     }
   },
   "nav": {
@@ -108,7 +108,7 @@
     }
   },
   "bento": {
-    "eyebrow": "WHAT SETS US APART",
+    "eyebrow": "UNIQUE APPROACH",
     "headline": "Advantages that translate into outcomes.",
     "main_title": "A website that generates leads, not just looks good",
     "main_description": "Every project ends with a form that works — inquiries go directly to the client via WhatsApp, without middlemen and without waiting for email.",
@@ -120,6 +120,25 @@
     "growth_description": "I work with Cursor and Claude Code. Vibe coding means I deliver faster than a traditional agency, with no compromises on quality.",
     "ecosystem_title": "One provider, full-service delivery",
     "ecosystem_description": "From design and implementation to technical care and SEO. You do not need to coordinate a designer, developer, and SEO agency separately."
+  },
+  "servicesSection": {
+    "eyebrow": "SERVICES",
+    "headline": "What I build for you.",
+    "cta": "View pricing",
+    "cards": {
+      "websites": {
+        "title": "Websites",
+        "description": "Webflow, Next.js, Svelte — responsive, fast, and SEO-optimized. From landing pages to full-scale company websites."
+      },
+      "integrations": {
+        "title": "Integrations and automation",
+        "description": "WhatsApp, Cal.com, Google Maps, forms — I connect your website with the tools you already use."
+      },
+      "products": {
+        "title": "Digital products",
+        "description": "SaaS platforms, web apps, and systems with custom logic — if you have a product idea, I can build it."
+      }
+    }
   },
   "pricing": {
     "eyebrow": "PRICING",
