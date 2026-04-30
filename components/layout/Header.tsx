@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, type MouseEvent } from "react";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -110,6 +110,14 @@ export default function Header() {
     }),
   };
 
+  const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (window.location.pathname === "/") {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setMenuOpen(false);
+    }
+  };
+
   return (
     <>
       <header
@@ -122,6 +130,8 @@ export default function Header() {
             {/* Logo — lewa */}
             <Link
               href="/"
+              scroll
+              onClick={handleBrandClick}
               className="group relative text-2xl font-semibold tracking-tight text-white py-1 z-10"
             >
               SiteConcept

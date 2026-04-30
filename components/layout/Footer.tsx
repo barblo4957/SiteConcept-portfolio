@@ -1,10 +1,18 @@
 "use client";
 
 import Link from "next/link";
+import type { MouseEvent } from "react";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
   const t = useTranslations("footer");
+
+  const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (window.location.pathname === "/") {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <footer className="w-full bg-zinc-950 border-t border-white/5 py-8 md:py-10">
@@ -13,6 +21,8 @@ export default function Footer() {
           <div className="flex-1 text-center md:text-left">
             <Link
               href="/"
+              scroll
+              onClick={handleBrandClick}
               className="text-lg font-semibold tracking-tight text-zinc-100 hover:text-zinc-200 transition-colors"
             >
               SiteConcept
