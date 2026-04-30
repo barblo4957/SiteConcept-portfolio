@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     // 1. Powiadomienie do Ciebie
     await resend.emails.send({
       from: "Formularz SiteConcept <noreply@siteconcept.pl>",
-      to: process.env.CONTACT_EMAIL!,
+      to: "b.blokesz@gmail.com",
       subject: `📩 Nowa wiadomość od ${name}`,
       html: `
         <h2>Nowa wiadomość z formularza</h2>
