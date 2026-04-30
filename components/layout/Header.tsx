@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, type MouseEvent } from "react";
+import { useState, useEffect, useRef, type MouseEvent as ReactMouseEvent } from "react";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { useTranslations } from "next-intl";
@@ -110,7 +110,7 @@ export default function Header() {
     }),
   };
 
-  const handleBrandClick = (event: MouseEvent<HTMLAnchorElement>) => {
+  const handleBrandClick = (event: ReactMouseEvent<HTMLAnchorElement>) => {
     if (window.location.pathname === "/") {
       event.preventDefault();
       window.scrollTo({ top: 0, behavior: "smooth" });
