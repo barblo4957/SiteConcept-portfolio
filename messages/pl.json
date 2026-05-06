@@ -79,7 +79,7 @@
     "method": {
       "analysis": {
         "title": "Rozpoznanie",
-        "description": "Słuchamy co boli — mapujemy procesy, ruch i miejsca gdzie tracisz klientów. Nie zakładamy z góry."
+        "description": "Najpierw analizuję, co blokuje wzrost — procesy, ruch i miejsca utraty klientów. Nie zakładam niczego z góry."
       },
       "design": {
         "title": "Budowa",
@@ -87,7 +87,7 @@
       },
       "results": {
         "title": "Wzrost",
-        "description": "Mierzymy efekty i iterujemy. Czas pracy, jakość leadów, spójność danych — każda decyzja ma odzwierciedlenie w wyniku."
+        "description": "Mierzę efekty i wdrażam kolejne usprawnienia. Czas pracy, jakość leadów i spójność danych — każda decyzja ma odzwierciedlenie w wyniku."
       }
     },
     "subtitle": "Jak pomagamy",
@@ -95,7 +95,7 @@
     "cards": {
       "image": {
         "title": "Zamieniamy 'wyglądanie tanio' w status lidera.",
-        "description": "Klienci uciekają do konkurencji przez pierwsze wrażenie. Budujemy wizerunek premium, który sprawia, że przestają pytać o cenę."
+        "description": "Klienci uciekają do konkurencji przez pierwsze wrażenie. Buduję wizerunek premium, który sprawia, że przestają pytać o cenę."
       },
       "speed": {
         "title": "Zamieniamy irytujące czekanie w zachwyt.",
@@ -171,11 +171,11 @@
       "feature3": "Dedykowane wsparcie przez 3 miesiące",
       "feature4": "Czas realizacji: 6–12 tygodni"
     },
-    "saasExample": "Budujemy też produkty z własnym modelem subskrypcyjnym — przykład: platforma Tenisliga."
+    "saasExample": "Tworzę też produkty z własnym modelem subskrypcyjnym — przykład: platforma Tenisliga."
   },
   "contact": {
     "title": "Gotowy na zmianę?",
-    "description": "Opowiedz nam o swoim projekcie. Odpowiemy w ciągu 24 godzin.",
+    "description": "Opisz swój projekt. Odpowiem w ciągu 24 godzin.",
     "fields": {
       "name": {
         "label": "Imię",
@@ -232,7 +232,7 @@
     },
     "contactForm": {
       "heading": "Formularz kontaktowy",
-      "text": "Wysłanie formularza kontaktowego oznacza, że przekazujesz nam adres e-mail i treść wiadomości. Dane te przetwarzamy w celu odpowiedzi na Twoje zapytanie. W każdej chwili możesz skontaktować się z nami w sprawie swoich danych."
+      "text": "Wysłanie formularza kontaktowego oznacza, że przekazujesz adres e-mail i treść wiadomości. Dane te przetwarzam w celu odpowiedzi na Twoje zapytanie. W każdej chwili możesz skontaktować się ze mną w sprawie swoich danych."
     },
     "lastUpdated": "Ostatnia aktualizacja: 2026-03-19"
   }

@@ -57,7 +57,7 @@
       "title": "Tenisliga",
       "badge": "SaaS",
       "tag": "Sport platform / QR automation / Real-time ranking",
-      "description": "An intelligent system for running sports leagues. We replaced SMS threads and Excel sheets with an automated platform where players report results from the court and the ranking updates in real time.",
+      "description": "An intelligent system for running sports leagues. I replaced SMS threads and Excel sheets with an automated platform where players report results from the court and the ranking updates in real time.",
       "qrCaption": "Result from court",
       "mockRankingHeading": "Table — Division I",
       "mockPointsUnit": "pts"
@@ -79,7 +79,7 @@
     "method": {
       "analysis": {
         "title": "Discovery",
-        "description": "We listen to what hurts — mapping processes, traffic, and points where you lose customers. We do not assume up front."
+        "description": "I start by identifying what hurts most — mapping processes, traffic, and points where you lose customers. I do not assume up front."
       },
       "design": {
         "title": "Build",
@@ -87,15 +87,15 @@
       },
       "results": {
         "title": "Growth",
-        "description": "We measure outcomes and iterate. Work time, lead quality, and data consistency — every decision is reflected in results."
+        "description": "I measure outcomes and iterate. Work time, lead quality, and data consistency — every decision is reflected in results."
       }
     },
-    "subtitle": "How we help",
+    "subtitle": "How I help",
     "title": "Turning problems into advantages.",
     "cards": {
       "image": {
         "title": "From looking cheap to premium status.",
-        "description": "Customers leave due to poor first impressions. We build a premium presence that makes them stop asking about the price."
+        "description": "Customers leave due to poor first impressions. I build a premium presence that makes them stop asking about the price."
       },
       "speed": {
         "title": "From frustrating waits to instant delight.",
@@ -171,11 +171,11 @@
       "feature3": "Dedicated support for 3 months",
       "feature4": "Delivery time: 6–12 weeks"
     },
-    "saasExample": "We also build products with their own subscription model — example: the Tenisliga platform."
+    "saasExample": "I also build products with their own subscription model — example: the Tenisliga platform."
   },
   "contact": {
     "title": "Ready for a change?",
-    "description": "Tell us about your project. We’ll get back within 24 hours.",
+    "description": "Tell me about your project. I’ll get back within 24 hours.",
     "fields": {
       "name": {
         "label": "Name",
@@ -216,15 +216,15 @@
     }
   },
   "cookies": {
-    "text": "We use cookies and similar technologies to provide the services and improve the website. Click “Accept” to confirm your consent.",
+    "text": "I use cookies and similar technologies to provide the services and improve the website. Click “Accept” to confirm your consent.",
     "accept": "Accept"
   },
   "privacy": {
     "title": "Privacy policy",
-    "intro": "Below we explain how we process personal data of visitors of the SiteConcept website, including the data submitted via the contact form and information stored through cookies.",
+    "intro": "Below I explain how personal data of visitors of the SiteConcept website is processed, including the data submitted via the contact form and information stored through cookies.",
     "dataProtection": {
       "heading": "Data protection",
-      "text": "We process personal data to respond to inquiries and support users. The data controller is SiteConcept. We use appropriate technical and organizational measures to protect data against unauthorized access, loss, or alteration."
+      "text": "Personal data is processed to respond to inquiries and support users. The data controller is SiteConcept. I use appropriate technical and organizational measures to protect data against unauthorized access, loss, or alteration."
     },
     "cookies": {
       "heading": "Cookies",
@@ -232,7 +232,7 @@
     },
     "contactForm": {
       "heading": "Contact form",
-      "text": "Submitting the contact form means you provide your email address and message content. We process this data to respond to your request. You can contact us at any time regarding your data."
+      "text": "Submitting the contact form means you provide your email address and message content. I process this data to respond to your request. You can contact me at any time regarding your data."
     },
     "lastUpdated": "Last updated: 2026-03-19"
   }

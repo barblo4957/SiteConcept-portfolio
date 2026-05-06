@@ -20,7 +20,7 @@
 SiteConcept v2 to radykalna zmiana wizerunku — ze strony freelancera Webflow do **profesjonalnego studia deweloperskiego** specjalizującego się w ultra-wydajnych stronach Next.js.
 
 **Nowa tożsamość marki:**
-> "We build blazing-fast, scalable Next.js websites for businesses that can't afford to be slow."
+> "I build blazing-fast, scalable Next.js websites for businesses that can't afford to be slow."
 
 **Trzy filary pozycjonowania:**
 1. **Speed** — Core Web Vitals 100/100, sub-1s LCP, edge-first deployment (Vercel)
@@ -259,7 +259,7 @@ siteconcept.pl/en/pricing
 **"The Site Itself" case study:**
 - Dokumentujemy publiczne wyniki Lighthouse po każdym release
 - W portfolio opisujemy stack, decyzje, wyniki — jako live proof of work
-- Pozwala mówić do klientów: "Nasza własna strona działa w X ms — Twoja może tak samo"
+- Pozwala mówić do klientów: "Moja własna strona działa w X ms — Twoja może tak samo"
 
 ## 10. Success Metrics
 
