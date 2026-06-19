@@ -24,6 +24,9 @@ const wordReveal = {
   },
 };
 
+const ctaClassName =
+  "mt-8 inline-flex items-center justify-center rounded-lg border border-lime-400/40 bg-lime-400/10 px-4 py-2 text-sm font-semibold text-lime-200 transition-colors hover:bg-lime-400/20";
+
 export default function HeroSection() {
   const t = useTranslations("hero");
   const isMobile = useIsMobile();
@@ -44,6 +47,9 @@ export default function HeroSection() {
             <p className="mt-6 max-w-2xl text-zinc-300 text-lg font-sans opacity-100">
               {t("subtitle")}
             </p>
+            <a href="#portfolio" className={ctaClassName}>
+              {t("cta.primary")}
+            </a>
           </>
         ) : (
           <>
@@ -71,6 +77,15 @@ export default function HeroSection() {
             >
               {t("subtitle")}
             </motion.p>
+            <motion.a
+              href="#portfolio"
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+              className={ctaClassName}
+            >
+              {t("cta.primary")}
+            </motion.a>
           </>
         )}
       </div>
