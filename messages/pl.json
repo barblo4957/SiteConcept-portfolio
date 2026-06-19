@@ -1,10 +1,10 @@
 {
   "hero": {
-    "headline": "Zamień ruch w lojalnych klientów",
-    "title": "Twoja marka zasługuje na oprawę premium.",
-    "subtitle": "Pierwsze wrażenie decyduje o zaufaniu. Daj swojej marce stronę, która od pierwszej sekundy pracuje na wynik.",
+    "headline": "Strona albo aplikacja która działa — dostosowana do tego co potrzebujesz.",
+    "title": "Strona albo aplikacja która działa — dostosowana do tego co potrzebujesz.",
+    "subtitle": "Od landingu w tygodniu po rozbudowany produkt — szybko, bez czekania. Jedna osoba od początku do końca.",
     "cta": {
-      "primary": "Zacznijmy projekt",
+      "primary": "Zobacz portfolio",
       "secondary": "Zobacz realizacje"
     }
   },
