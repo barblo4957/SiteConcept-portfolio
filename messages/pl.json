@@ -198,6 +198,7 @@
     "errors": {
       "invalidEmail": "Podaj poprawny adres e-mail.",
       "emptyMessage": "Wiadomość nie może być pusta.",
+      "turnstile": "Potwierdź, że nie jesteś botem.",
       "generic": "Coś poszło nie tak. Spróbuj ponownie."
     }
   },

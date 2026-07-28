@@ -198,6 +198,7 @@
     "errors": {
       "invalidEmail": "Please enter a valid email address.",
       "emptyMessage": "Message cannot be empty.",
+      "turnstile": "Please confirm you are not a bot.",
       "generic": "Something went wrong. Please try again."
     }
   },
